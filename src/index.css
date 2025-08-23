@@ -172,7 +172,7 @@
   }
 
   .card-ministry {
-    @apply bg-gradient-to-br from-spirit to-heaven border border-border/30 rounded-xl p-6 shadow-card hover:shadow-divine transition-all duration-300 group hover:scale-105;
+    @apply bg-gradient-to-br from-spirit to-heaven border border-border/30 rounded-xl p-6 shadow-card hover:shadow-divine transition-all duration-300 hover:scale-105;
   }
 
   /* Section backgrounds */
