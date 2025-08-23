@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* BCIF Church Design System - Inspired by JCC Kenya */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 245 15% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 245 15% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 245 15% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Purple-based primary colors inspired by JCC */
+    --primary: 270 91% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 70% 50%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gold accent colors for BCIF branding */
+    --secondary: 45 100% 60%;
+    --secondary-foreground: 245 15% 13%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 245 10% 96%;
+    --muted-foreground: 245 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 315 80% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 245 20% 90%;
+    --input: 245 20% 95%;
+    --ring: 270 91% 35%;
 
-    --radius: 0.5rem;
+    /* Church-specific colors */
+    --heaven: 240 100% 97%;
+    --heaven-foreground: 245 15% 13%;
+    
+    --spirit: 270 100% 95%;
+    --spirit-foreground: 270 91% 35%;
+
+    /* Beautiful gradients for hero sections */
+    --gradient-primary: linear-gradient(135deg, hsl(270 91% 35%), hsl(315 80% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 91% 35%) 0%, hsl(315 80% 45%) 50%, hsl(45 100% 60%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(270 100% 99%) 100%);
+    --gradient-worship: linear-gradient(145deg, hsl(270 40% 20%) 0%, hsl(315 60% 30%) 100%);
+
+    /* Elegant shadows with purple tint */
+    --shadow-divine: 0 20px 40px -10px hsl(270 91% 35% / 0.3);
+    --shadow-glow: 0 0 60px hsl(270 70% 50% / 0.4);
+    --shadow-card: 0 4px 20px hsl(270 20% 70% / 0.15);
+
+    /* Smooth transitions */
+    --transition-divine: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-worship: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +79,49 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 245 20% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 245 15% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 245 15% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 270 70% 60%;
+    --primary-foreground: 245 20% 8%;
+    --primary-glow: 270 80% 70%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 45 90% 55%;
+    --secondary-foreground: 245 20% 8%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 245 15% 15%;
+    --muted-foreground: 245 10% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 315 70% 55%;
+    --accent-foreground: 245 20% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 245 15% 20%;
+    --input: 245 15% 15%;
+    --ring: 270 70% 60%;
+
+    --heaven: 245 15% 12%;
+    --heaven-foreground: 0 0% 95%;
+    
+    --spirit: 270 20% 15%;
+    --spirit-foreground: 270 70% 80%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(270 70% 40%), hsl(315 70% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 60% 25%) 0%, hsl(315 70% 35%) 50%, hsl(45 90% 50%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(245 20% 8%) 0%, hsl(270 30% 12%) 100%);
+    --gradient-worship: linear-gradient(145deg, hsl(270 50% 15%) 0%, hsl(315 60% 20%) 100%);
+
+    --shadow-divine: 0 20px 40px -10px hsl(270 70% 20% / 0.6);
+    --shadow-glow: 0 0 60px hsl(270 70% 50% / 0.3);
+    --shadow-card: 0 4px 20px hsl(270 40% 10% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +139,99 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero text styles */
+  .hero-title {
+    @apply text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent leading-tight;
+  }
+
+  .hero-subtitle {
+    @apply text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed;
+  }
+
+  /* Beautiful buttons */
+  .btn-divine {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-glow transition-all duration-500 hover:scale-105 hover:-translate-y-1;
+  }
+
+  .btn-worship {
+    @apply bg-gradient-to-r from-accent to-secondary text-accent-foreground px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-divine transition-all duration-300 hover:scale-105;
+  }
+
+  /* Card styles */
+  .card-divine {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 shadow-card hover:shadow-divine transition-all duration-500 hover:-translate-y-2;
+  }
+
+  .card-ministry {
+    @apply bg-gradient-to-br from-spirit to-heaven border border-border/30 rounded-xl p-6 shadow-card hover:shadow-divine transition-all duration-300 group hover:scale-105;
+  }
+
+  /* Section backgrounds */
+  .section-gradient {
+    @apply bg-gradient-to-b from-background via-spirit/30 to-background;
+  }
+
+  .section-worship {
+    @apply bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5;
+  }
+
+  /* Text effects */
+  .text-divine {
+    @apply bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent font-bold;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary-glow) / 0.5);
+  }
+
+  /* Animation classes */
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
   }
 }
