@@ -72,9 +72,11 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">BCIF</span>
-              </div>
+              <img 
+                src="/lovable-uploads/981dc698-340d-4400-aa57-c58c5a9a9bee.png" 
+                alt="Body of Christ International Fellowship Logo" 
+                className="w-16 h-16 object-contain"
+              />
               <div>
                 <h1 className="text-xl font-bold text-divine">
                   Body of Christ International Fellowship
