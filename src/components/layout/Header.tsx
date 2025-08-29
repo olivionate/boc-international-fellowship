@@ -27,11 +27,11 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+254 700 000 000</span>
+                <span>+254721658788</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@bcif.org</span>
+                <span>info@thebocfellowship.org</span>
               </div>
               <div className="hidden md:flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
