@@ -10,7 +10,8 @@ import {
   ArrowRight,
   BookOpen,
   Heart,
-  Mic
+  Mic,
+  Hand
 } from 'lucide-react';
 
 const MinistriesSection = () => {
@@ -49,6 +50,13 @@ const MinistriesSection = () => {
       icon: Tv,
       color: 'bg-accent',
       link: '/ministries/tv'
+    },
+    {
+      title: 'Prayer and Intercession Ministry',
+      description: 'Fostering a deep culture of prayer and spiritual dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer chains.',
+      icon: Hand,
+      color: 'bg-secondary',
+      link: '/ministries/prayer-intercession'
     }
   ];
 
