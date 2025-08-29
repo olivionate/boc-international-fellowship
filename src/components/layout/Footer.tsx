@@ -117,11 +117,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 opacity-80" />
-                <p className="text-sm">+254 700 000 000</p>
+                <p className="text-sm">+254721658788</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 opacity-80" />
-                <p className="text-sm">info@bcif.org</p>
+                <p className="text-sm">info@thebocfellowship.org</p>
               </div>
             </div>
             
