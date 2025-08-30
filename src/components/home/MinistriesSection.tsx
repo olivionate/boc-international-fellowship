@@ -14,6 +14,14 @@ import {
   Hand
 } from 'lucide-react';
 
+// Import ministry images
+import globalAssemblyImg from '@/assets/ministry-global-assembly.jpg';
+import schoolImg from '@/assets/ministry-school.jpg';
+import outreachImg from '@/assets/ministry-outreach.jpg';
+import musicImg from '@/assets/ministry-music.jpg';
+import tvImg from '@/assets/ministry-tv.jpg';
+import prayerImg from '@/assets/ministry-prayer.jpg';
+
 const MinistriesSection = () => {
   const ministries = [
     {
@@ -21,6 +29,7 @@ const MinistriesSection = () => {
       description: 'Empowering Gospel Ministers worldwide through comprehensive support, training, and fellowship that nurtures spiritual, emotional, and practical capacities.',
       icon: Users,
       color: 'bg-primary',
+      image: globalAssemblyImg,
       link: '/ministries/global-assembly'
     },
     {
@@ -28,6 +37,7 @@ const MinistriesSection = () => {
       description: 'Premier theological education and leadership development institution offering comprehensive curriculum for pastors, evangelists, and ministry leaders.',
       icon: GraduationCap,
       color: 'bg-accent',
+      image: schoolImg,
       link: '/ministries/school'
     },
     {
@@ -35,6 +45,7 @@ const MinistriesSection = () => {
       description: 'Fulfilling the Great Commission through evangelistic campaigns, church planting, and community development projects across nations.',
       icon: Globe,
       color: 'bg-secondary',
+      image: outreachImg,
       link: '/ministries/outreach'
     },
     {
@@ -42,6 +53,7 @@ const MinistriesSection = () => {
       description: 'Training worship leaders, musicians, and vocalists to lead transformative, Spirit-filled worship experiences that draw people into God\'s presence.',
       icon: Music,
       color: 'bg-primary',
+      image: musicImg,
       link: '/ministries/music'
     },
     {
@@ -49,6 +61,7 @@ const MinistriesSection = () => {
       description: 'Media ministry impacting the Body of Christ through biblical teaching, worship, and spiritual content for growth and development in unity.',
       icon: Tv,
       color: 'bg-accent',
+      image: tvImg,
       link: '/ministries/tv'
     },
     {
@@ -56,6 +69,7 @@ const MinistriesSection = () => {
       description: 'Fostering a deep culture of prayer and spiritual dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer chains.',
       icon: Hand,
       color: 'bg-secondary',
+      image: prayerImg,
       link: '/ministries/prayer-intercession'
     }
   ];
@@ -77,25 +91,36 @@ const MinistriesSection = () => {
           {ministries.map((ministry, index) => {
             const IconComponent = ministry.icon;
             return (
-              <div key={ministry.title} className="card-divine group hover:shadow-glow">
-                <div className={`w-14 h-14 ${ministry.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                  <IconComponent className="h-7 w-7 text-white" />
+              <div key={ministry.title} className="card-divine group hover:shadow-glow overflow-hidden">
+                {/* Image */}
+                <div className="relative h-48 mb-6 overflow-hidden rounded-lg">
+                  <img 
+                    src={ministry.image} 
+                    alt={ministry.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                  <div className={`absolute top-4 left-4 w-12 h-12 ${ministry.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                    <IconComponent className="h-6 w-6 text-white" />
+                  </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors px-6">
                   {ministry.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed px-6">
                   {ministry.description}
                 </p>
                 
-                <Button asChild variant="outline" className="group-hover:border-primary group-hover:text-primary">
-                  <Link to={ministry.link}>
-                    Learn More
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
+                <div className="px-6 pb-6">
+                  <Button asChild variant="outline" className="w-full group-hover:border-primary group-hover:text-primary">
+                    <Link to={ministry.link}>
+                      Learn More
+                      <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
             );
           })}
