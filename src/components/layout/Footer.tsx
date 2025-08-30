@@ -14,6 +14,7 @@ import {
   Clock,
   Calendar
 } from 'lucide-react';
+import bcifLogo from '/lovable-uploads/c9fcc8f7-2aee-47bc-8e18-6df1669bd974.png';
 
 const Footer = () => {
   return (
@@ -23,8 +24,12 @@ const Footer = () => {
           {/* Church Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold">BCIF</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
+                <img 
+                  src={bcifLogo} 
+                  alt="BCIF Logo" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <div>
                 <h3 className="font-bold text-lg">BCIF</h3>
