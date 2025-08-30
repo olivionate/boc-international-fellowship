@@ -90,15 +90,15 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Calendar className="h-4 w-4 mt-1 opacity-80" />
                 <div>
-                  <p className="text-sm font-medium">Wednesday Bible Study</p>
+                  <p className="text-sm font-medium">Wednesday Healing & Restoration Service</p>
                   <p className="text-xs opacity-80">6:30 PM</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Heart className="h-4 w-4 mt-1 opacity-80" />
                 <div>
-                  <p className="text-sm font-medium">Friday Night Prayer</p>
-                  <p className="text-xs opacity-80">7:00 PM</p>
+                  <p className="text-sm font-medium">Friday Holy Spirit Outpouring Night</p>
+                  <p className="text-xs opacity-80">9:00 PM - 5:00 AM</p>
                 </div>
               </div>
             </div>

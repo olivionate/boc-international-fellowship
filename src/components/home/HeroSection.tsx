@@ -71,7 +71,7 @@ const HeroSection = () => {
               <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
                 <Heart className="h-6 w-6 text-secondary-foreground" />
               </div>
-              <h3 className="font-bold text-white mb-2">Bible Study</h3>
+              <h3 className="font-bold text-white mb-2">Healing & Restoration Service</h3>
               <p className="text-white/80 text-sm">Wednesday 6:30 PM</p>
             </div>
 
@@ -79,8 +79,8 @@ const HeroSection = () => {
               <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
                 <Calendar className="h-6 w-6 text-secondary-foreground" />
               </div>
-              <h3 className="font-bold text-white mb-2">Prayer Night</h3>
-              <p className="text-white/80 text-sm">Friday 7:00 PM</p>
+              <h3 className="font-bold text-white mb-2">Holy Spirit Outpouring Night</h3>
+              <p className="text-white/80 text-sm">Friday 9:00 PM - 5:00 AM</p>
             </div>
           </div>
         </div>
