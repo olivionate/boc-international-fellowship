@@ -30,7 +30,7 @@ const MinistriesSection = () => {
       link: '/ministries/global-assembly'
     },
     {
-      title: 'School of Ministry',
+      title: 'BOC School of Ministry',
       description: 'Premier theological education and leadership development institution offering comprehensive curriculum for pastors, evangelists, and ministry leaders.',
       icon: GraduationCap,
       color: 'bg-accent',
@@ -46,7 +46,7 @@ const MinistriesSection = () => {
       link: '/ministries/outreach'
     },
     {
-      title: 'Music Academy',
+      title: 'BOC International Music Academy',
       description: 'Training worship leaders, musicians, and vocalists to lead transformative, Spirit-filled worship experiences that draw people into God\'s presence.',
       icon: Music,
       color: 'bg-primary',
