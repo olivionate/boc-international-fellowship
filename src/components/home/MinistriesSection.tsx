@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 
 // Import ministry images
+import outreachImg from '@/assets/ministry-outreach.jpg';
 import musicImg from '@/assets/ministry-music.jpg';
 import tvImg from '@/assets/ministry-tv.jpg';
 
@@ -37,11 +38,11 @@ const MinistriesSection = () => {
       link: '/ministries/school'
     },
     {
-      title: 'Global Outreach Ministry',
+      title: 'BOC Global Outreach Ministry',
       description: 'Fulfilling the Great Commission through evangelistic campaigns, church planting, and community development projects across nations.',
       icon: Globe,
       color: 'bg-secondary',
-      image: '/lovable-uploads/e7d89103-c593-4fc7-ad76-ae1a690bcd7f.png',
+      image: outreachImg,
       link: '/ministries/outreach'
     },
     {
