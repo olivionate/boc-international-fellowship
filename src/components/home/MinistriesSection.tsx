@@ -15,12 +15,8 @@ import {
 } from 'lucide-react';
 
 // Import ministry images
-import globalAssemblyImg from '@/assets/ministry-global-assembly.jpg';
-import schoolImg from '@/assets/ministry-school.jpg';
-import outreachImg from '@/assets/ministry-outreach.jpg';
 import musicImg from '@/assets/ministry-music.jpg';
 import tvImg from '@/assets/ministry-tv.jpg';
-import prayerImg from '@/assets/ministry-prayer.jpg';
 
 const MinistriesSection = () => {
   const ministries = [
@@ -29,7 +25,7 @@ const MinistriesSection = () => {
       description: 'Empowering Gospel Ministers worldwide through comprehensive support, training, and fellowship that nurtures spiritual, emotional, and practical capacities.',
       icon: Users,
       color: 'bg-primary',
-      image: globalAssemblyImg,
+      image: '/lovable-uploads/391b9e36-116d-4102-b16b-5701261c7362.png',
       link: '/ministries/global-assembly'
     },
     {
@@ -37,7 +33,7 @@ const MinistriesSection = () => {
       description: 'Premier theological education and leadership development institution offering comprehensive curriculum for pastors, evangelists, and ministry leaders.',
       icon: GraduationCap,
       color: 'bg-accent',
-      image: schoolImg,
+      image: '/lovable-uploads/67e8ca79-39ed-4fc5-b023-e65d1a4be63d.png',
       link: '/ministries/school'
     },
     {
@@ -45,7 +41,7 @@ const MinistriesSection = () => {
       description: 'Fulfilling the Great Commission through evangelistic campaigns, church planting, and community development projects across nations.',
       icon: Globe,
       color: 'bg-secondary',
-      image: outreachImg,
+      image: '/lovable-uploads/e7d89103-c593-4fc7-ad76-ae1a690bcd7f.png',
       link: '/ministries/outreach'
     },
     {
@@ -69,7 +65,7 @@ const MinistriesSection = () => {
       description: 'Fostering a deep culture of prayer and spiritual dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer chains.',
       icon: Hand,
       color: 'bg-secondary',
-      image: prayerImg,
+      image: '/lovable-uploads/0aed0a5d-f745-4c37-aff8-5d98e2cb86cf.png',
       link: '/ministries/prayer-intercession'
     }
   ];
