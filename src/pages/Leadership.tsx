@@ -6,9 +6,9 @@ import leadershipImage from '@/assets/leadership-team.jpg';
 const Leadership = () => {
   const leaders = [
     {
-      name: "Senior Pastor",
-      title: "Lead Pastor & Founder",
-      description: "Visionary leader with a heart for global revival and spiritual transformation",
+      name: "Pastor Oliver & Veronicah Dennis",
+      title: "Lead Pastors",
+      description: "Visionary leaders with a heart for global revival and spiritual transformation",
       image: leadershipImage,
       email: "pastor@bcif.org",
       phone: "+254 700 000 001"
