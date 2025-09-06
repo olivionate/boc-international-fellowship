@@ -22,11 +22,11 @@ const Leadership = () => {
       phone: "+254 700 000 002"
     },
     {
-      name: "Worship Pastor",
-      title: "Director of Worship",
-      description: "Leading our community in spirit-filled worship and praise",
+      name: "BCIF Pastoral Council",
+      title: "Administration & Development",
+      description: "In charge of administration and development of the church",
       image: leadershipImage,
-      email: "worship@bcif.org",
+      email: "council@bcif.org",
       phone: "+254 700 000 003"
     }
   ];
