@@ -14,11 +14,11 @@ const Leadership = () => {
       phone: "+254 700 000 001"
     },
     {
-      name: "Associate Pastor",
-      title: "Associate Pastor",
-      description: "Passionate about discipleship and community building",
+      name: "Pastors Daniel & Shalet Murage",
+      title: "General Overseers",
+      description: "The spiritual covering of the ministry, providing guidance and oversight",
       image: leadershipImage,
-      email: "associate@bcif.org",
+      email: "overseers@bcif.org",
       phone: "+254 700 000 002"
     },
     {
