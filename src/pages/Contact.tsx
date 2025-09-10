@@ -82,9 +82,9 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-2">General Inquiries:</p>
-                <p className="font-semibold mb-2">info@bcif.org</p>
+                <p className="font-semibold mb-2">info@thebocfellowship.org</p>
                 <p className="text-muted-foreground mb-2">Prayer Requests:</p>
-                <p className="font-semibold mb-4">prayer@bcif.org</p>
+                <p className="font-semibold mb-4">prayer@thebocfellowship.org</p>
                 <Button variant="outline" size="sm">
                   <Mail className="h-4 w-4 mr-2" />
                   Send Email

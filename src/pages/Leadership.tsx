@@ -10,7 +10,7 @@ const Leadership = () => {
       title: "Lead Pastors",
       description: "Visionary leaders with a heart for global revival and spiritual transformation",
       image: leadershipImage,
-      email: "pastor@bcif.org",
+      email: "pastor@thebocfellowship.org",
       phone: "+254 700 000 001"
     },
     {
@@ -18,7 +18,7 @@ const Leadership = () => {
       title: "General Overseers",
       description: "The spiritual covering of the ministry, providing guidance and oversight",
       image: leadershipImage,
-      email: "overseers@bcif.org",
+      email: "overseers@thebocfellowship.org",
       phone: "+254 700 000 002"
     },
     {
@@ -26,7 +26,7 @@ const Leadership = () => {
       title: "Administration & Development",
       description: "In charge of administration and development of the church",
       image: leadershipImage,
-      email: "council@bcif.org",
+      email: "council@thebocfellowship.org",
       phone: "+254 700 000 003"
     }
   ];
