@@ -59,23 +59,13 @@ const Leadership = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {leaders.map((leader, index) => (
               <div key={leader.name} className="card-divine text-center group">
-                {index === 1 ? (
-                  <div className="w-48 h-64 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
-                    <img 
-                      src={leader.image} 
-                      alt={leader.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                ) : (
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
-                    <img 
-                      src={leader.image} 
-                      alt={leader.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                )}
+                <div className="w-48 h-64 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
+                  <img 
+                    src={leader.image} 
+                    alt={leader.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 
                 <h3 className="text-xl font-bold text-foreground mb-2">{leader.name}</h3>
                 <p className="text-primary font-medium mb-3">{leader.title}</p>
