@@ -60,24 +60,13 @@ const Leadership = () => {
             {leaders.map((leader, index) => (
               <div key={leader.name} className="card-divine text-center group">
                 {index === 1 ? (
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors cursor-pointer">
-                        <img 
-                          src={leader.image} 
-                          alt={leader.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                        />
-                      </div>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-2xl">
-                      <img 
-                        src={leader.image} 
-                        alt={leader.name}
-                        className="w-full h-auto rounded-lg"
-                      />
-                    </DialogContent>
-                  </Dialog>
+                  <div className="w-48 h-64 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
+                    <img 
+                      src={leader.image} 
+                      alt={leader.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 ) : (
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
                     <img 
