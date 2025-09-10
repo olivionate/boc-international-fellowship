@@ -63,9 +63,9 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-2">Main Office:</p>
-                <p className="font-semibold mb-2">+254 700 000 000</p>
+                <p className="font-semibold mb-2">+254 721 658 788</p>
                 <p className="text-muted-foreground mb-2">Prayer Line:</p>
-                <p className="font-semibold mb-4">+254 700 000 001</p>
+                <p className="font-semibold mb-4">+254 736 325 788</p>
                 <Button variant="outline" size="sm">
                   <Phone className="h-4 w-4 mr-2" />
                   Call Now

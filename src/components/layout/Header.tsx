@@ -27,7 +27,7 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+254721658788</span>
+                <span>+254 721 658 788</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
