@@ -6,7 +6,7 @@ import leadershipImage from '@/assets/leadership-team.jpg';
 const Leadership = () => {
   const leaders = [
     {
-      name: "Pastors Oliver Dennis & Pastor Veronicah Dennis",
+      name: "Pastors Oliver & Veronicah Dennis",
       title: "Lead Pastors",
       description: "Visionary leaders with a heart for global revival and spiritual transformation",
       image: leadershipImage,
