@@ -17,7 +17,7 @@ const Leadership = () => {
       name: "Pastors Daniel & Shalet Murage",
       title: "General Overseers",
       description: "The spiritual covering of the ministry, providing guidance and oversight",
-      image: leadershipImage,
+      image: "/lovable-uploads/8573f389-b19a-4c36-89fd-9b66e0799411.png",
       email: "overseers@thebocfellowship.org",
       phone: "+254 700 000 002"
     },
