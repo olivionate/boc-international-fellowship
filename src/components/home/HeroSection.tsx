@@ -42,7 +42,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button asChild size="lg" className="btn-worship">
-              <Link to="/visit">
+              <Link to="/contact">
                 <Users className="h-5 w-5 mr-2" />
                 Plan Your Visit
                 <ArrowRight className="h-4 w-4 ml-2" />
@@ -50,10 +50,10 @@ const HeroSection = () => {
             </Button>
             
             <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-              <Link to="/live">
+              <a href="https://boctv.co.ke/" target="_blank" rel="noopener noreferrer">
                 <Calendar className="h-5 w-5 mr-2" />
                 Watch Live Stream
-              </Link>
+              </a>
             </Button>
           </div>
 
