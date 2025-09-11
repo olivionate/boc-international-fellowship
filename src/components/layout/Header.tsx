@@ -56,10 +56,10 @@ const Header = () => {
                 size="sm" 
                 className="text-primary-foreground hover:bg-white/20"
               >
-                <Link to="/live">
+                <a href="https://boctv.co.ke/" target="_blank" rel="noopener noreferrer">
                   <Headphones className="h-4 w-4 mr-2" />
                   Live Stream
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
