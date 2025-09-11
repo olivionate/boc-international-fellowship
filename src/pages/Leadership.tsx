@@ -88,13 +88,17 @@ const Leadership = () => {
                 <p className="text-muted-foreground mb-6">{leader.description}</p>
                 
                 <div className="flex justify-center space-x-3">
-                  <Button size="sm" variant="outline">
-                    <Mail className="h-4 w-4 mr-2" />
-                    Email
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="mailto:pastor@thebocfellowship.org">
+                      <Mail className="h-4 w-4 mr-2" />
+                      Email
+                    </a>
                   </Button>
-                  <Button size="sm" variant="outline">
-                    <Phone className="h-4 w-4 mr-2" />
-                    Call
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="tel:+254721658788">
+                      <Phone className="h-4 w-4 mr-2" />
+                      Call
+                    </a>
                   </Button>
                 </div>
               </div>
