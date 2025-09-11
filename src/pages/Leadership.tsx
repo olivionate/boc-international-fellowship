@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Mail, Phone, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import leadershipImage from '@/assets/leadership-team.jpg';
 
 const Leadership = () => {
@@ -89,16 +90,16 @@ const Leadership = () => {
                 
                 <div className="flex justify-center space-x-3">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="mailto:pastor@thebocfellowship.org">
+                    <Link to="/contact">
                       <Mail className="h-4 w-4 mr-2" />
                       Email
-                    </a>
+                    </Link>
                   </Button>
                   <Button size="sm" variant="outline" asChild>
-                    <a href="tel:+254721658788">
+                    <Link to="/contact">
                       <Phone className="h-4 w-4 mr-2" />
                       Call
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>
