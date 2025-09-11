@@ -162,13 +162,17 @@ const Leadership = () => {
               Our pastoral team is here to serve you. Reach out for prayer, guidance, or pastoral care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-divine">
-                <Mail className="h-5 w-5 mr-2" />
-                Contact Leadership
+              <Button size="lg" className="btn-divine" asChild>
+                <Link to="/contact">
+                  <Mail className="h-5 w-5 mr-2" />
+                  Contact Leadership
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                <Phone className="h-5 w-5 mr-2" />
-                Schedule Meeting
+              <Button size="lg" variant="outline" asChild>
+                <Link to="/contact">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Schedule Meeting
+                </Link>
               </Button>
             </div>
           </div>
