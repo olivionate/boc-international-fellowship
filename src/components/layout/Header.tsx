@@ -107,7 +107,7 @@ const Header = () => {
             {/* CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
               <Button asChild variant="outline">
-                <Link to="/visit">
+                <Link to="/contact">
                   <Users className="h-4 w-4 mr-2" />
                   Plan a Visit
                 </Link>
@@ -145,7 +145,7 @@ const Header = () => {
                   ))}
                   <div className="pt-4 border-t border-border">
                     <Button asChild variant="outline" className="w-full mb-3">
-                      <Link to="/visit" onClick={() => setIsOpen(false)}>
+                      <Link to="/contact" onClick={() => setIsOpen(false)}>
                         <Users className="h-4 w-4 mr-2" />
                         Plan a Visit
                       </Link>
