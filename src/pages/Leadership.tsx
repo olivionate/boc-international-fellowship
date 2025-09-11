@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Mail, Phone, ExternalLink } from 'lucide-react';
@@ -59,13 +59,29 @@ const Leadership = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {leaders.map((leader, index) => (
               <div key={leader.name} className="card-divine text-center group">
-                <div className="w-48 h-64 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
-                  <img 
-                    src={leader.image} 
-                    alt={leader.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <div className="w-48 h-64 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-primary/20 group-hover:border-primary/50 transition-colors cursor-pointer">
+                      <img 
+                        src={leader.image} 
+                        alt={leader.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-2xl">
+                    <div className="text-center">
+                      <img 
+                        src={leader.image} 
+                        alt={leader.name}
+                        className="w-full h-auto rounded-lg mb-4"
+                      />
+                      <h3 className="text-2xl font-bold text-foreground mb-2">{leader.name}</h3>
+                      <p className="text-primary font-medium mb-3">{leader.title}</p>
+                      <p className="text-muted-foreground">{leader.description}</p>
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 
                 <h3 className="text-xl font-bold text-foreground mb-2">{leader.name}</h3>
                 <p className="text-primary font-medium mb-3">{leader.title}</p>
