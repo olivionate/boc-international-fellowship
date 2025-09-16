@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Mail, Phone, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import leadershipImage from '@/assets/leadership-team.jpg';
+import pastorOliverVeronicahImage from '@/assets/pastor-oliver-veronicah.jpg';
 
 const Leadership = () => {
   const leaders = [
@@ -11,7 +12,7 @@ const Leadership = () => {
       name: "Pastors Oliver & Veronicah Dennis",
       title: "Lead Pastors",
       description: "Visionary leaders with a heart for global revival and spiritual transformation",
-      image: leadershipImage,
+      image: pastorOliverVeronicahImage,
       email: "pastor@thebocfellowship.org",
       phone: "+254 700 000 001"
     },
