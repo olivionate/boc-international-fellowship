@@ -2,6 +2,14 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, Heart, Globe, BookOpen, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import missionPhoto from '@/assets/mission-photo.jpg';
+import visionPhoto from '@/assets/vision-photo.jpg';
+import biblicalAuthorityImg from '@/assets/biblical-authority.jpg';
+import christCenteredWorshipImg from '@/assets/christ-centered-worship.jpg';
+import servantLeadershipImg from '@/assets/servant-leadership.jpg';
+import globalMissionImg from '@/assets/global-mission.jpg';
+import holisticMinistryImg from '@/assets/holistic-ministry.jpg';
+import excellenceMinistryImg from '@/assets/excellence-ministry.jpg';
 
 const About = () => {
   return (
@@ -47,8 +55,15 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="card-divine">
-              <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6">
-                <Heart className="h-8 w-8 text-primary-foreground" />
+              <div className="mb-6">
+                <img 
+                  src={missionPhoto} 
+                  alt="Our Mission - Global ministry and discipleship" 
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center">
+                  <Heart className="h-8 w-8 text-primary-foreground" />
+                </div>
               </div>
               <h3 className="text-2xl font-bold text-divine mb-4">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -59,8 +74,15 @@ const About = () => {
             </div>
 
             <div className="card-divine">
-              <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mb-6">
-                <Globe className="h-8 w-8 text-accent-foreground" />
+              <div className="mb-6">
+                <img 
+                  src={visionPhoto} 
+                  alt="Our Vision - Transforming communities and nations" 
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center">
+                  <Globe className="h-8 w-8 text-accent-foreground" />
+                </div>
               </div>
               <h3 className="text-2xl font-bold text-divine mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -88,39 +110,52 @@ const About = () => {
               {
                 title: 'Biblical Authority',
                 description: 'We believe the Bible is the inspired, infallible Word of God, serving as our ultimate authority for faith and practice.',
-                icon: BookOpen
+                icon: BookOpen,
+                image: biblicalAuthorityImg
               },
               {
                 title: 'Christ-Centered Worship',
                 description: 'Creating an environment where believers encounter God through dynamic, Spirit-led worship and fervent prayer.',
-                icon: Heart
+                icon: Heart,
+                image: christCenteredWorshipImg
               },
               {
                 title: 'Servant Leadership',
                 description: 'Developing leaders who emulate the humility and service of Jesus Christ, leading with integrity and love.',
-                icon: Users
+                icon: Users,
+                image: servantLeadershipImg
               },
               {
                 title: 'Global Mission',
                 description: 'Fulfilling the Great Commission by reaching all nations with the Gospel through cross-cultural partnerships.',
-                icon: Globe
+                icon: Globe,
+                image: globalMissionImg
               },
               {
                 title: 'Holistic Ministry',
                 description: 'Addressing spiritual, emotional, and practical needs, empowering individuals to thrive in all areas of life.',
-                icon: Heart
+                icon: Heart,
+                image: holisticMinistryImg
               },
               {
                 title: 'Excellence in Ministry',
                 description: 'Pursuing high standards in all endeavors to honor God and reflect His glory through quality and intentionality.',
-                icon: BookOpen
+                icon: BookOpen,
+                image: excellenceMinistryImg
               }
             ].map((value, index) => {
               const IconComponent = value.icon;
               return (
                 <div key={value.title} className="card-ministry">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <IconComponent className="h-6 w-6 text-primary-foreground" />
+                  <div className="mb-4">
+                    <img 
+                      src={value.image} 
+                      alt={`${value.title} - ${value.description.substring(0, 50)}...`}
+                      className="w-full h-40 object-cover rounded-lg mb-3"
+                    />
+                    <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <IconComponent className="h-6 w-6 text-primary-foreground" />
+                    </div>
                   </div>
                   <h3 className="text-xl font-bold text-spirit-foreground mb-3">{value.title}</h3>
                   <p className="text-muted-foreground">{value.description}</p>
