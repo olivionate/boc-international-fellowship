@@ -10,9 +10,18 @@ import {
   Heart,
   BookOpen,
   Mic,
-  Calendar
+  Calendar,
+  Hand
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+// Import ministry photos
+import joinGlobalAssembly from '@/assets/join-global-assembly.jpg';
+import joinSchoolMinistry from '@/assets/join-school-ministry.jpg';
+import joinOutreachMinistry from '@/assets/join-outreach-ministry.jpg';
+import joinMusicAcademy from '@/assets/join-music-academy.jpg';
+import joinTvMinistry from '@/assets/join-tv-ministry.jpg';
+import joinPrayerMinistry from '@/assets/join-prayer-ministry.jpg';
 
 const Ministries = () => {
   const mainMinistries = [
@@ -22,6 +31,7 @@ const Ministries = () => {
       description: 'A global ministry committed to the holistic development of Gospel Ministers through comprehensive support, training, and fellowship. Our monthly gatherings across various countries create dynamic platforms for ministers to connect, learn, and grow.',
       icon: Users,
       color: 'bg-primary',
+      photo: joinGlobalAssembly,
       features: [
         'Monthly global gatherings',
         'Fellowship and networking',
@@ -36,6 +46,7 @@ const Ministries = () => {
       description: 'A premier institution dedicated to theological education and leadership development, offering comprehensive curriculum tailored to equip pastors, evangelists, missionaries, and lay leaders for impactful service.',
       icon: GraduationCap,
       color: 'bg-accent',
+      photo: joinSchoolMinistry,
       features: [
         'Biblical exegesis courses',
         'Systematic theology',
@@ -50,6 +61,7 @@ const Ministries = () => {
       description: 'Embodying our commitment to fulfilling the Great Commission through evangelistic campaigns, church planting, and community development projects that address both spiritual and material needs.',
       icon: Globe,
       color: 'bg-secondary',
+      photo: joinOutreachMinistry,
       features: [
         'Evangelistic crusades',
         'Church planting initiatives',
@@ -64,6 +76,7 @@ const Ministries = () => {
       description: 'Training worship leaders, musicians, and vocalists to lead Spirit-filled worship experiences that draw people into God\'s presence, blending technical excellence with spiritual sensitivity.',
       icon: Music,
       color: 'bg-primary',
+      photo: joinMusicAcademy,
       features: [
         'Music theory and performance',
         'Worship leadership training',
@@ -78,12 +91,28 @@ const Ministries = () => {
       description: 'Our media arm impacting the Body of Christ for growth and development in unity, doctrine, knowledge of scriptures, and a firm relationship with Jesus Christ through television broadcasting.',
       icon: Tv,
       color: 'bg-accent',
+      photo: joinTvMinistry,
       features: [
         'Bible exposition programs',
         'Spirit concert broadcasts',
         'Christian documentaries',
         'Global partnerships',
         'Online streaming'
+      ]
+    },
+    {
+      title: 'Prayer and Intercessory Ministry',
+      subtitle: 'Fostering a Culture of Prayer',
+      description: 'Fostering a deep culture of prayer and spiritual dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer chains that strengthen the Body of Christ.',
+      icon: Hand,
+      color: 'bg-secondary',
+      photo: joinPrayerMinistry,
+      features: [
+        'Corporate prayer meetings',
+        'Intercession groups',
+        '24/7 prayer chains',
+        'Spiritual warfare training',
+        'Revival prayer initiatives'
       ]
     }
   ];
@@ -145,23 +174,36 @@ const Ministries = () => {
                   </div>
                   
                   <div className={`${!isEven ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                    <div className="card-divine bg-gradient-subtle p-8 text-center">
-                      <div className={`w-24 h-24 ${ministry.color} rounded-full flex items-center justify-center mx-auto mb-6`}>
-                        <IconComponent className="h-12 w-12 text-white" />
+                    <div className="card-divine bg-gradient-subtle overflow-hidden">
+                      {/* Photo Section */}
+                      <div className="relative h-48 overflow-hidden">
+                        <img 
+                          src={ministry.photo} 
+                          alt={`Join ${ministry.title}`}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div className={`absolute top-4 left-4 w-12 h-12 ${ministry.color} rounded-xl flex items-center justify-center`}>
+                          <IconComponent className="h-6 w-6 text-white" />
+                        </div>
                       </div>
-                      <h3 className="text-xl font-bold text-foreground mb-4">Join This Ministry</h3>
-                      <p className="text-muted-foreground mb-6">
-                        Be part of this transformative ministry and help us impact lives globally.
-                      </p>
-                      <div className="space-y-3">
-                        <Button variant="outline" className="w-full">
-                          <Heart className="h-4 w-4 mr-2" />
-                          Get Involved
-                        </Button>
-                        <Button variant="ghost" className="w-full">
-                          <Calendar className="h-4 w-4 mr-2" />
-                          Schedule Info Session
-                        </Button>
+                      
+                      {/* Content Section */}
+                      <div className="p-8 text-center">
+                        <h3 className="text-xl font-bold text-foreground mb-4">Join This Ministry</h3>
+                        <p className="text-muted-foreground mb-6">
+                          Be part of this transformative ministry and help us impact lives globally.
+                        </p>
+                        <div className="space-y-3">
+                          <Button variant="outline" className="w-full">
+                            <Heart className="h-4 w-4 mr-2" />
+                            Get Involved
+                          </Button>
+                          <Button variant="ghost" className="w-full">
+                            <Calendar className="h-4 w-4 mr-2" />
+                            Schedule Info Session
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
