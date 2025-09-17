@@ -201,9 +201,11 @@ const Ministries = () => {
                               Get Involved
                             </Link>
                           </Button>
-                          <Button variant="ghost" className="w-full">
-                            <Calendar className="h-4 w-4 mr-2" />
-                            Schedule Info Session
+                          <Button asChild variant="ghost" className="w-full">
+                            <Link to="/contact">
+                              <Calendar className="h-4 w-4 mr-2" />
+                              Schedule Info Session
+                            </Link>
                           </Button>
                         </div>
                       </div>
