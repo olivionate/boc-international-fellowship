@@ -195,9 +195,11 @@ const Ministries = () => {
                           Be part of this transformative ministry and help us impact lives globally.
                         </p>
                         <div className="space-y-3">
-                          <Button variant="outline" className="w-full">
-                            <Heart className="h-4 w-4 mr-2" />
-                            Get Involved
+                          <Button asChild variant="outline" className="w-full">
+                            <Link to="/give">
+                              <Heart className="h-4 w-4 mr-2" />
+                              Get Involved
+                            </Link>
                           </Button>
                           <Button variant="ghost" className="w-full">
                             <Calendar className="h-4 w-4 mr-2" />
