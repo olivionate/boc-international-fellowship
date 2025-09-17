@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Phone, Mail, MapPin, Heart, Users, Calendar, Headphones } from 'lucide-react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Menu, Phone, Mail, MapPin, Heart, Users, Calendar, Headphones, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -89,19 +90,54 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    location.pathname === item.href
-                      ? 'text-primary border-b-2 border-primary pb-1'
-                      : 'text-foreground'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                if (item.label === 'Ministries') {
+                  return (
+                    <DropdownMenu key={item.href}>
+                      <DropdownMenuTrigger className="flex items-center space-x-1 text-sm font-medium transition-colors hover:text-primary text-foreground">
+                        <span>Ministries</span>
+                        <ChevronDown className="h-4 w-4" />
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent className="bg-background border z-50">
+                        <DropdownMenuItem asChild>
+                          <Link to="/ministries" className="w-full">All Ministries</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/ministries/global-ministers-assembly" className="w-full">Global Ministers Assembly</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/ministries/school-of-ministry" className="w-full">School of Ministry</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/ministries/global-outreach" className="w-full">Global Outreach</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/ministries/music-academy" className="w-full">Music Academy</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/ministries/boc-tv" className="w-full">BOC TV</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/ministries/prayer-ministry" className="w-full">Prayer Ministry</Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  );
+                }
+                return (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className={`text-sm font-medium transition-colors hover:text-primary ${
+                      location.pathname === item.href
+                        ? 'text-primary border-b-2 border-primary pb-1'
+                        : 'text-foreground'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </div>
 
             {/* CTA Button */}

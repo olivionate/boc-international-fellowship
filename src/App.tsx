@@ -15,6 +15,12 @@ import Contact from "./pages/Contact";
 import Give from "./pages/Give";
 import PrayerRequest from "./pages/PrayerRequest";
 import NotFound from "./pages/NotFound";
+import GlobalMinistersAssembly from "./pages/ministries/GlobalMinistersAssembly";
+import SchoolOfMinistry from "./pages/ministries/SchoolOfMinistry";
+import GlobalOutreachMinistry from "./pages/ministries/GlobalOutreachMinistry";
+import MusicAcademy from "./pages/ministries/MusicAcademy";
+import BOCTV from "./pages/ministries/BOCTV";
+import PrayerMinistry from "./pages/ministries/PrayerMinistry";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +43,12 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/give" element={<Give />} />
               <Route path="/prayer-request" element={<PrayerRequest />} />
+              <Route path="/ministries/global-ministers-assembly" element={<GlobalMinistersAssembly />} />
+              <Route path="/ministries/school-of-ministry" element={<SchoolOfMinistry />} />
+              <Route path="/ministries/global-outreach" element={<GlobalOutreachMinistry />} />
+              <Route path="/ministries/music-academy" element={<MusicAcademy />} />
+              <Route path="/ministries/boc-tv" element={<BOCTV />} />
+              <Route path="/ministries/prayer-ministry" element={<PrayerMinistry />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
