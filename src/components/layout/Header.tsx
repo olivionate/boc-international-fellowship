@@ -178,12 +178,6 @@ const Header = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
-              <Button asChild variant="outline">
-                <Link to="/contact">
-                  <Users className="h-4 w-4 mr-2" />
-                  Plan a Visit
-                </Link>
-              </Button>
               <Button asChild className="btn-divine">
                 <Link to="/give">
                   <Heart className="h-4 w-4 mr-2" />
@@ -216,12 +210,6 @@ const Header = () => {
                     </Link>
                   ))}
                   <div className="pt-4 border-t border-border">
-                    <Button asChild variant="outline" className="w-full mb-3">
-                      <Link to="/contact" onClick={() => setIsOpen(false)}>
-                        <Users className="h-4 w-4 mr-2" />
-                        Plan a Visit
-                      </Link>
-                    </Button>
                     <Button asChild className="btn-divine w-full">
                       <Link to="/give" onClick={() => setIsOpen(false)}>
                         <Heart className="h-4 w-4 mr-2" />
