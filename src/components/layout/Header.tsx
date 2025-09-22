@@ -14,7 +14,7 @@ const Header = () => {
     { href: '/about', label: 'About Us' },
     { href: '/leadership', label: 'Leadership' },
     { href: '/ministries', label: 'Ministries' },
-    { href: '/events', label: 'Events' },
+    { href: '/departments', label: 'Departments' },
     { href: '/sermons', label: 'Sermons' },
     { href: '/contact', label: 'Contact' },
   ];
@@ -119,6 +119,42 @@ const Header = () => {
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/ministries/prayer-ministry" className="w-full">Prayer Ministry</Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  );
+                }
+                if (item.label === 'Departments') {
+                  return (
+                    <DropdownMenu key={item.href}>
+                      <DropdownMenuTrigger className="flex items-center space-x-1 text-sm font-medium transition-colors hover:text-primary text-foreground">
+                        <span>Departments</span>
+                        <ChevronDown className="h-4 w-4" />
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent className="bg-background border z-50">
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/mens-empowerment" className="w-full">Men's Empowerment Fellowship</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/womens-ministry" className="w-full">Women's Ministry</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/hospitality" className="w-full">Hospitality Department</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/youth-ministry" className="w-full">Youth Ministry</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/teens-ministry" className="w-full">Teens Ministry</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/sunday-school" className="w-full">Sunday School</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/praise-worship" className="w-full">Praise & Worship Ministry</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/departments/compassion-mercy" className="w-full">Compassion & Mercy Ministry</Link>
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
