@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { BookOpen, Calendar, Clock, Search, Tag } from 'lucide-react';
@@ -356,9 +357,11 @@ God has equipped every believer with the Holy Spirit's power to be effective wit
                 </div>
                 
                 <div className="flex gap-2">
-                  <Button size="sm" className="btn-divine flex-1">
-                    <BookOpen className="h-4 w-4 mr-2" />
-                    Read
+                  <Button size="sm" className="btn-divine flex-1" asChild>
+                    <Link to={`/sermons/${sermon.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
+                      <BookOpen className="h-4 w-4 mr-2" />
+                      Read
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -424,9 +427,11 @@ God has equipped every believer with the Holy Spirit's power to be effective wit
                     </div>
                     
                     <div className="mt-4 lg:mt-0 lg:ml-6 flex gap-2">
-                      <Button className="btn-worship">
-                        <BookOpen className="h-4 w-4 mr-2" />
-                        Read
+                      <Button className="btn-worship" asChild>
+                        <Link to={`/sermons/${sermon.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
+                          <BookOpen className="h-4 w-4 mr-2" />
+                          Read
+                        </Link>
                       </Button>
                     </div>
                   </div>
@@ -487,9 +492,11 @@ God has equipped every believer with the Holy Spirit's power to be effective wit
                     {seriesName === 'Global Mission' && 'Embrace the Great Commission mandate to reach all nations for Christ.'}
                   </p>
                   
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    <BookOpen className="h-4 w-4 mr-2" />
-                    Read Series
+                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
+                    <Link to={`/sermons/series/${seriesName.toLowerCase().replace(/\s+/g, '-')}`}>
+                      <BookOpen className="h-4 w-4 mr-2" />
+                      Read Series
+                    </Link>
                   </Button>
                 </div>
               );
