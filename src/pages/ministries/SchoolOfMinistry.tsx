@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { GraduationCap, Heart, Calendar, ArrowRight, BookOpen, Globe, Users } from 'lucide-react';
 import heroImage from '@/assets/school-ministry-hero.jpg';
+import missionImage from '@/assets/ministries/school-mission.jpg';
+import visionImage from '@/assets/ministries/school-vision.jpg';
 
 const SchoolOfMinistry = () => {
   return (
@@ -48,14 +50,35 @@ const SchoolOfMinistry = () => {
       {/* Overview Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-divine mb-6">Premier Theological Education</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              The Body of Christ School of Ministry is a premier institution dedicated to theological education and leadership 
-              development. Recognizing that effective ministry requires a deep understanding of Scripture and practical skills, 
-              the school offers a comprehensive curriculum tailored to equip pastors, evangelists, missionaries, and lay leaders 
-              for impactful service.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={missionImage} alt="African theological students" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  The Body of Christ School of Ministry is a premier institution dedicated to theological education and leadership 
+                  development. Recognizing that effective ministry requires a deep understanding of Scripture and practical skills, 
+                  the school offers a comprehensive curriculum tailored to equip pastors, evangelists, missionaries, and lay leaders 
+                  for impactful service.
+                </p>
+              </div>
+            </div>
+
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={visionImage} alt="Ministry graduates ready for leadership" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To raise a generation of theologically sound, spiritually mature, and practically equipped ministry leaders who 
+                  will transform their churches and communities. We envision graduates who combine deep biblical knowledge with 
+                  Spirit-led ministry, making lasting impact across nations.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Curriculum Highlights */}

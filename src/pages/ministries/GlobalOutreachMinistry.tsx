@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Globe, Heart, Calendar, ArrowRight, Users, MapPin, Zap } from 'lucide-react';
 import heroImage from '@/assets/outreach-ministry-hero.jpg';
+import missionImage from '@/assets/ministries/outreach-mission.jpg';
+import visionImage from '@/assets/ministries/outreach-vision.jpg';
 
 const GlobalOutreachMinistry = () => {
   return (
@@ -48,13 +50,34 @@ const GlobalOutreachMinistry = () => {
       {/* Mission Overview */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-divine mb-6">Fulfilling the Great Commission</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              The Body of Christ Global Outreach Ministry embodies BCIF's commitment to fulfilling the Great Commission 
-              by making disciples of all nations. This ministry serves as the church's evangelistic and missional arm, 
-              spearheading initiatives that extend the Gospel's reach to diverse regions and people groups.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={missionImage} alt="African missionaries in outreach" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  The Body of Christ Global Outreach Ministry embodies BCIF's commitment to fulfilling the Great Commission 
+                  by making disciples of all nations. This ministry serves as the church's evangelistic and missional arm, 
+                  spearheading initiatives that extend the Gospel's reach to diverse regions and people groups.
+                </p>
+              </div>
+            </div>
+
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={visionImage} alt="Global outreach vision" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To see the Gospel reach every nation and people group, establishing vibrant Christian communities that 
+                  transform lives and societies. We envision a world where the love of Christ is demonstrated through both 
+                  word and deed, bringing holistic transformation to communities across the globe.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Outreach Activities */}

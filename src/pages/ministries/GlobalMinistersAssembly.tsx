@@ -3,6 +3,13 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Users, Heart, Calendar, ArrowRight, Globe, BookOpen, GraduationCap } from 'lucide-react';
 import heroImage from '@/assets/ministers-assembly-hero.jpg';
+import missionImage from '@/assets/ministries/gma-mission.jpg';
+import visionImage from '@/assets/ministries/gma-vision.jpg';
+import edifyImage from '@/assets/ministries/gma-edify.jpg';
+import equipImage from '@/assets/ministries/gma-equip.jpg';
+import encourageImage from '@/assets/ministries/gma-encourage.jpg';
+import strengthenImage from '@/assets/ministries/gma-strengthen.jpg';
+import developImage from '@/assets/ministries/gma-develop.jpg';
 
 const GlobalMinistersAssembly = () => {
   return (
@@ -49,32 +56,42 @@ const GlobalMinistersAssembly = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-            <div className="card-divine">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <Globe className="h-6 w-6 text-white" />
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={missionImage} alt="African ministers in fellowship" className="w-full h-full object-cover rounded-t-lg" />
               </div>
-              <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Our mission is to empower Gospel Ministers by providing comprehensive support that nurtures their spiritual, 
-                emotional, and practical capacities. We aim to equip ministers with the tools, knowledge, and encouragement 
-                needed to excel in their unique callings, ensuring they are prepared to lead, teach, and serve with confidence 
-                and clarity. Through intentional programs and gatherings, we foster an environment where ministers can grow, 
-                connect, and thrive in their service to the Body of Christ.
-              </p>
+              <div className="p-6">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+                  <Globe className="h-6 w-6 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Our mission is to empower Gospel Ministers by providing comprehensive support that nurtures their spiritual, 
+                  emotional, and practical capacities. We aim to equip ministers with the tools, knowledge, and encouragement 
+                  needed to excel in their unique callings, ensuring they are prepared to lead, teach, and serve with confidence 
+                  and clarity. Through intentional programs and gatherings, we foster an environment where ministers can grow, 
+                  connect, and thrive in their service to the Body of Christ.
+                </p>
+              </div>
             </div>
 
-            <div className="card-divine">
-              <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6">
-                <Heart className="h-6 w-6 text-white" />
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={visionImage} alt="Global network of African ministers" className="w-full h-full object-cover rounded-t-lg" />
               </div>
-              <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                The Body of Christ Global Ministers Assembly envisions a global network of Spirit-led ministers who are fully 
-                equipped, deeply inspired, and united in their pursuit of God's purpose. We strive to see ministers who are 
-                not only effective in their local contexts but also globally influential, carrying the Gospel with boldness 
-                and compassion. Our vision is to create a vibrant, interconnected community where ministers are continually 
-                strengthened to impact their churches, communities, and nations for Christ.
-              </p>
+              <div className="p-6">
+                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6">
+                  <Heart className="h-6 w-6 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  The Body of Christ Global Ministers Assembly envisions a global network of Spirit-led ministers who are fully 
+                  equipped, deeply inspired, and united in their pursuit of God's purpose. We strive to see ministers who are 
+                  not only effective in their local contexts but also globally influential, carrying the Gospel with boldness 
+                  and compassion. Our vision is to create a vibrant, interconnected community where ministers are continually 
+                  strengthened to impact their churches, communities, and nations for Christ.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -91,37 +108,47 @@ const GlobalMinistersAssembly = () => {
               { 
                 title: 'Edify', 
                 description: 'Building up ministers through sound biblical teaching, spiritual mentorship, and opportunities for personal renewal.',
-                icon: BookOpen
+                icon: BookOpen,
+                image: edifyImage
               },
               { 
                 title: 'Equip', 
                 description: 'Providing practical tools and training to enhance ministry effectiveness including workshops and resources.',
-                icon: GraduationCap
+                icon: GraduationCap,
+                image: equipImage
               },
               { 
                 title: 'Encourage', 
                 description: 'Creating supportive environments where ministers find encouragement through peer mentoring and prayer networks.',
-                icon: Heart
+                icon: Heart,
+                image: encourageImage
               },
               { 
                 title: 'Strengthen', 
                 description: 'Building resilience and spiritual fortitude, enabling ministers to navigate challenges and opposition.',
-                icon: Users
+                icon: Users,
+                image: strengthenImage
               },
               { 
                 title: 'Develop', 
                 description: 'Fostering leadership growth and personal development through targeted programs and strategic planning.',
-                icon: Globe
+                icon: Globe,
+                image: developImage
               }
             ].map((objective) => {
               const IconComponent = objective.icon;
               return (
-                <div key={objective.title} className="card-ministry text-center">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <IconComponent className="h-6 w-6 text-primary-foreground" />
+                <div key={objective.title} className="card-ministry text-center overflow-hidden">
+                  <div className="relative h-48 mb-4">
+                    <img src={objective.image} alt={objective.title} className="w-full h-full object-cover" />
                   </div>
-                  <h3 className="text-lg font-bold text-spirit-foreground mb-3">{objective.title}</h3>
-                  <p className="text-sm text-muted-foreground">{objective.description}</p>
+                  <div className="p-4">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <IconComponent className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <h3 className="text-lg font-bold text-spirit-foreground mb-3">{objective.title}</h3>
+                    <p className="text-sm text-muted-foreground">{objective.description}</p>
+                  </div>
                 </div>
               );
             })}

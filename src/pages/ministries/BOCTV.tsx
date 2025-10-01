@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Tv, Heart, Calendar, ArrowRight, Users, Globe, BookOpen, Music } from 'lucide-react';
 import heroImage from '@/assets/tv-ministry-hero.jpg';
+import missionImage from '@/assets/ministries/tv-mission.jpg';
+import visionImage from '@/assets/ministries/tv-vision.jpg';
 
 const BOCTV = () => {
   return (
@@ -48,18 +50,39 @@ const BOCTV = () => {
       {/* Mission Statement */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-divine mb-6">Our Media Mission</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              The Body of Christ TV is the Ministry's media arm that aims to "impact the Body of Christ for growth 
-              and development in unity, doctrine, knowledge of scriptures, and a firm relationship with Jesus Christ 
-              who is our Lord and Savior."
-            </p>
-            <div className="bg-gradient-primary text-primary-foreground p-6 rounded-lg">
-              <p className="text-lg font-medium">
-                "Impact the Body of Christ for growth and development in unity, doctrine, 
-                knowledge of scriptures, and a firm relationship with Jesus Christ"
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={missionImage} alt="African media team in production" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  The Body of Christ TV is the Ministry's media arm that aims to "impact the Body of Christ for growth 
+                  and development in unity, doctrine, knowledge of scriptures, and a firm relationship with Jesus Christ 
+                  who is our Lord and Savior."
+                </p>
+                <div className="bg-gradient-primary text-primary-foreground p-4 rounded-lg">
+                  <p className="text-sm font-medium">
+                    "Impact the Body of Christ for growth and development in unity, doctrine, 
+                    knowledge of scriptures, and a firm relationship with Jesus Christ"
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={visionImage} alt="Global broadcast vision" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To be a leading Christian media platform that reaches every nation through compelling content that educates, 
+                  inspires, and transforms lives. We envision a global audience united in sound doctrine, deep scriptural 
+                  knowledge, and authentic relationship with Jesus Christ through the power of media ministry.
+                </p>
+              </div>
             </div>
           </div>
 

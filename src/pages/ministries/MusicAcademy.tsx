@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Music, Heart, Calendar, ArrowRight, Mic, Users, Globe } from 'lucide-react';
 import heroImage from '@/assets/music-academy-hero.jpg';
+import missionImage from '@/assets/ministries/music-mission.jpg';
+import visionImage from '@/assets/ministries/music-vision.jpg';
 
 const MusicAcademy = () => {
   return (
@@ -48,13 +50,34 @@ const MusicAcademy = () => {
       {/* Academy Overview */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-divine mb-6">Excellence in Worship Leadership</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Worship is at the heart of BCIF's identity, and the Body of Christ Music Academy is a vibrant expression 
-              of this commitment. The academy exists to train worship leaders, musicians, and vocalists to lead 
-              transformative, Spirit-filled worship experiences that draw people into God's presence.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={missionImage} alt="African worship leaders in training" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Worship is at the heart of BCIF's identity, and the Body of Christ Music Academy is a vibrant expression 
+                  of this commitment. The academy exists to train worship leaders, musicians, and vocalists to lead 
+                  transformative, Spirit-filled worship experiences that draw people into God's presence.
+                </p>
+              </div>
+            </div>
+
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={visionImage} alt="Creative worship environment" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To raise a generation of anointed worship leaders who blend technical excellence with spiritual sensitivity, 
+                  creating authentic worship experiences that transform lives and glorify God. We envision a global movement 
+                  of worship that celebrates African musical heritage while reaching diverse audiences worldwide.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Course Offerings */}

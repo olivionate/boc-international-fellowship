@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Hand, Heart, Calendar, ArrowRight, Users, Globe, Zap, Shield } from 'lucide-react';
 import heroImage from '@/assets/prayer-ministry-hero.jpg';
+import missionImage from '@/assets/ministries/prayer-mission.jpg';
+import visionImage from '@/assets/ministries/prayer-vision.jpg';
 
 const PrayerMinistry = () => {
   return (
@@ -48,13 +50,34 @@ const PrayerMinistry = () => {
       {/* Ministry Overview */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-divine mb-6">The Power of Prayer</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              The Prayer and Intercessory Ministry is dedicated to fostering a deep culture of prayer and spiritual 
-              dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer 
-              chains that strengthen the Body of Christ and advance God's Kingdom purposes.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={missionImage} alt="African believers in prayer" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  The Prayer and Intercessory Ministry is dedicated to fostering a deep culture of prayer and spiritual 
+                  dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer 
+                  chains that strengthen the Body of Christ and advance God's Kingdom purposes.
+                </p>
+              </div>
+            </div>
+
+            <div className="card-divine overflow-hidden">
+              <div className="relative h-64 mb-6">
+                <img src={visionImage} alt="Prayer warriors in intercession" className="w-full h-full object-cover rounded-t-lg" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To build a powerful army of prayer warriors who understand their authority in Christ, creating a continuous 
+                  atmosphere of prayer that releases Heaven's power on earth. We envision communities transformed through 
+                  strategic intercession and spiritual breakthrough.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Key Features */}
