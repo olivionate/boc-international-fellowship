@@ -5,6 +5,15 @@ import { GraduationCap, Heart, Calendar, ArrowRight, BookOpen, Globe, Users } fr
 import heroImage from '@/assets/school-ministry-hero.jpg';
 import missionImage from '@/assets/ministries/school-mission.jpg';
 import visionImage from '@/assets/ministries/school-vision.jpg';
+import exegesis from '@/assets/ministries/school-exegesis.jpg';
+import theology from '@/assets/ministries/school-theology.jpg';
+import pastoral from '@/assets/ministries/school-pastoral.jpg';
+import homiletics from '@/assets/ministries/school-homiletics.jpg';
+import leadership from '@/assets/ministries/school-leadership.jpg';
+import contemporary from '@/assets/ministries/school-contemporary.jpg';
+import programs from '@/assets/ministries/school-programs.jpg';
+import learning from '@/assets/ministries/school-learning.jpg';
+import spiritual from '@/assets/ministries/school-spiritual.jpg';
 
 const SchoolOfMinistry = () => {
   return (
@@ -88,47 +97,52 @@ const SchoolOfMinistry = () => {
                 title: 'Biblical Exegesis',
                 description: 'Deep study of Scripture with proper interpretation methods and contextual understanding',
                 icon: BookOpen,
-                color: 'bg-primary'
+                image: exegesis
               },
               {
                 title: 'Systematic Theology',
                 description: 'Comprehensive study of Christian doctrines and theological frameworks',
                 icon: GraduationCap,
-                color: 'bg-secondary'
+                image: theology
               },
               {
                 title: 'Pastoral Care',
                 description: 'Practical training in counseling, mentorship, and spiritual guidance',
                 icon: Heart,
-                color: 'bg-accent'
+                image: pastoral
               },
               {
                 title: 'Homiletics',
                 description: 'Art and science of preaching with effective communication techniques',
                 icon: Users,
-                color: 'bg-primary'
+                image: homiletics
               },
               {
                 title: 'Leadership Principles',
                 description: 'Strategic leadership development for modern ministry challenges',
                 icon: Globe,
-                color: 'bg-secondary'
+                image: leadership
               },
               {
                 title: 'Contemporary Issues',
                 description: 'Applying biblical truths to current social and cultural challenges',
                 icon: ArrowRight,
-                color: 'bg-accent'
+                image: contemporary
               }
             ].map((course) => {
               const IconComponent = course.icon;
               return (
-                <div key={course.title} className="card-ministry">
-                  <div className={`w-12 h-12 ${course.color} rounded-lg flex items-center justify-center mb-4`}>
-                    <IconComponent className="h-6 w-6 text-white" />
+                <div key={course.title} className="card-ministry overflow-hidden">
+                  <div className="relative h-48 mb-4">
+                    <img src={course.image} alt={course.title} className="w-full h-full object-cover" />
                   </div>
-                  <h3 className="text-xl font-bold text-spirit-foreground mb-3">{course.title}</h3>
-                  <p className="text-muted-foreground">{course.description}</p>
+                  <div className="p-4">
+                    <div className="flex items-center mb-3">
+                      <IconComponent className="h-6 w-6 text-primary mr-2" />
+                      <h3 className="text-xl font-bold text-spirit-foreground">{course.title}</h3>
+                    </div>
+                    <p className="text-muted-foreground">{course.description}</p>
+                  </div>
                 </div>
               );
             })}
@@ -145,6 +159,9 @@ const SchoolOfMinistry = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
+                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                  <img src={programs} alt="Program Offerings" className="w-full h-full object-cover" />
+                </div>
                 <h3 className="text-2xl font-bold text-divine mb-6">Program Offerings</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -172,6 +189,9 @@ const SchoolOfMinistry = () => {
               </div>
 
               <div>
+                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                  <img src={learning} alt="Learning Approach" className="w-full h-full object-cover" />
+                </div>
                 <h3 className="text-2xl font-bold text-divine mb-6">Learning Approach</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -203,6 +223,9 @@ const SchoolOfMinistry = () => {
           {/* Spiritual Formation */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
+              <div className="relative h-80 mb-6 rounded-lg overflow-hidden">
+                <img src={spiritual} alt="Spiritual Formation Focus" className="w-full h-full object-cover" />
+              </div>
               <h2 className="text-3xl font-bold text-divine mb-6">Spiritual Formation Focus</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 Beyond academic rigor, the school prioritizes spiritual formation, encouraging students to deepen their 
