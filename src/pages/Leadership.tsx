@@ -5,6 +5,7 @@ import { Mail, Phone, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import leadershipImage from '@/assets/leadership-team.jpg';
 import pastorOliverVeronicahImage from '@/assets/pastor-oliver-veronicah.jpg';
+import pastorDanielShaletImage from '@/assets/pastor-daniel-shalet.jpg';
 
 const Leadership = () => {
   const leaders = [
@@ -20,7 +21,7 @@ const Leadership = () => {
       name: "Pastors Daniel & Shalet Murage",
       title: "General Overseers",
       description: "The spiritual covering of the ministry, providing guidance and oversight",
-      image: "/lovable-uploads/8573f389-b19a-4c36-89fd-9b66e0799411.png",
+      image: pastorDanielShaletImage,
       email: "overseers@thebocfellowship.org",
       phone: "+254 700 000 002"
     },
