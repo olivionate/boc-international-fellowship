@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Users, Target, Shield, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import mensEmpowermentHero from "@/assets/mens-empowerment-hero.jpg";
+import mensBibleStudy from "@/assets/mens-bible-study.jpg";
+import mensLeadershipDevelopment from "@/assets/mens-leadership-development.jpg";
+import mensRetreat from "@/assets/mens-retreat.jpg";
 
 const MensEmpowerment = () => {
   return (
@@ -75,7 +78,14 @@ const MensEmpowerment = () => {
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Our Programs</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={mensBibleStudy} 
+                  alt="African men studying the Bible together in fellowship"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Men's Bible Study</CardTitle>
                 <CardDescription>Weekly deep dives into God's Word</CardDescription>
@@ -88,7 +98,14 @@ const MensEmpowerment = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={mensLeadershipDevelopment} 
+                  alt="African men in leadership development training session"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Leadership Development</CardTitle>
                 <CardDescription>Equipping men to lead with integrity</CardDescription>
@@ -101,7 +118,14 @@ const MensEmpowerment = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={mensRetreat} 
+                  alt="African men in worship during spiritual retreat outdoors"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Men's Retreats</CardTitle>
                 <CardDescription>Spiritual renewal and brotherhood</CardDescription>
