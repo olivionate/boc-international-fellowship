@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Music, Mic, Guitar, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import praiseWorshipHero from "@/assets/praise-worship-hero.jpg";
+import worshipVocalTeam from "@/assets/worship-vocal-team.jpg";
+import worshipInstrumentalTeam from "@/assets/worship-instrumental-team.jpg";
+import worshipLeaders from "@/assets/worship-leaders.jpg";
 
 const PraiseWorship = () => {
   return (
@@ -77,7 +80,14 @@ const PraiseWorship = () => {
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Our Ministry Teams</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={worshipVocalTeam} 
+                  alt="African vocalists leading worship with passion and harmony"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Vocal Team</CardTitle>
                 <CardDescription>Leading through song and harmony</CardDescription>
@@ -90,7 +100,14 @@ const PraiseWorship = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={worshipInstrumentalTeam} 
+                  alt="African musicians playing instruments in worship band"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Instrumental Team</CardTitle>
                 <CardDescription>Musical excellence in worship</CardDescription>
@@ -103,7 +120,14 @@ const PraiseWorship = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={worshipLeaders} 
+                  alt="African worship leader guiding congregation in praise"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Worship Leaders</CardTitle>
                 <CardDescription>Guiding hearts to God</CardDescription>
