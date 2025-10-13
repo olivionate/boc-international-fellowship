@@ -69,9 +69,6 @@ const Footer = () => {
               <Link to="/ministries" className="block text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Our Ministries
               </Link>
-              <Link to="/events" className="block text-sm opacity-80 hover:opacity-100 transition-opacity">
-                Upcoming Events
-              </Link>
               <Link to="/sermons" className="block text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Sermons & Messages
               </Link>
