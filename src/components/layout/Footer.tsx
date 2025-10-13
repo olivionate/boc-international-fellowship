@@ -88,7 +88,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Clock className="h-4 w-4 mt-1 opacity-80" />
                 <div>
-                  <p className="text-sm font-medium">Sunday Worship</p>
+                  <p className="text-sm font-medium">Sunday Main Worship Services</p>
                   <p className="text-xs opacity-80">8:00 AM & 10:30 AM</p>
                 </div>
               </div>
