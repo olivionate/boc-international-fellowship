@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Heart, HandHeart, Users, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import compassionMercyHero from "@/assets/compassion-mercy-hero.jpg";
+import compassionCommunityOutreach from "@/assets/compassion-community-outreach.jpg";
+import compassionCrisisResponse from "@/assets/compassion-crisis-response.jpg";
+import compassionSocialWelfare from "@/assets/compassion-social-welfare.jpg";
 
 const CompassionMercy = () => {
   return (
@@ -77,7 +80,14 @@ const CompassionMercy = () => {
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Ministry Areas</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={compassionCommunityOutreach} 
+                  alt="African volunteers serving community with food distribution and outreach"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Community Outreach</CardTitle>
                 <CardDescription>Serving our local neighborhood</CardDescription>
@@ -90,7 +100,14 @@ const CompassionMercy = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={compassionCrisisResponse} 
+                  alt="African aid workers providing emergency assistance and relief"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Crisis Response</CardTitle>
                 <CardDescription>Emergency assistance and support</CardDescription>
@@ -103,7 +120,14 @@ const CompassionMercy = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={compassionSocialWelfare} 
+                  alt="African community workers providing education and job training"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Social Welfare</CardTitle>
                 <CardDescription>Addressing systemic needs</CardDescription>
