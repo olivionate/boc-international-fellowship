@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, BookOpen, Heart, Star, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import sundaySchoolHero from "@/assets/sunday-school-hero.jpg";
+import sundaySchoolNursery from "@/assets/sunday-school-nursery.jpg";
+import sundaySchoolToddlers from "@/assets/sunday-school-toddlers.jpg";
+import sundaySchoolElementary from "@/assets/sunday-school-elementary.jpg";
 
 const SundaySchool = () => {
   return (
@@ -79,7 +82,14 @@ const SundaySchool = () => {
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Our Age Groups</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={sundaySchoolNursery} 
+                  alt="African babies and toddlers in church nursery with caring teacher"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Nursery (0-2 years)</CardTitle>
                 <CardDescription>Safe care for our littlest ones</CardDescription>
@@ -92,7 +102,14 @@ const SundaySchool = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={sundaySchoolToddlers} 
+                  alt="African toddlers in Sunday School learning about Jesus"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Toddlers (2-4 years)</CardTitle>
                 <CardDescription>First steps in faith</CardDescription>
@@ -105,7 +122,14 @@ const SundaySchool = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={sundaySchoolElementary} 
+                  alt="African elementary children engaged in Bible study class"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Elementary (5-12 years)</CardTitle>
                 <CardDescription>Building biblical foundations</CardDescription>
