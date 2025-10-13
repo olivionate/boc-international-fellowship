@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Heart, Users, Globe } from 'lucide-react';
+import visionPhoto from '@/assets/vision-photo.jpg';
 
 const WelcomeSection = () => {
   return (
@@ -67,18 +68,27 @@ const WelcomeSection = () => {
             </div>
 
             <div className="relative">
-              <div className="card-divine p-8 bg-gradient-subtle">
-                <blockquote className="text-xl font-medium text-foreground mb-6 italic">
-                  "BCIF envisions a world where ministers are spiritually mature, theologically grounded, 
-                  and practically equipped to lead vibrant, impactful ministries that transform communities and nations."
-                </blockquote>
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">BCIF</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Our Vision</p>
-                    <p className="text-sm text-muted-foreground">Global Revival & Transformation</p>
+              <div className="card-divine overflow-hidden bg-gradient-subtle">
+                <div className="h-64 overflow-hidden">
+                  <img 
+                    src={visionPhoto} 
+                    alt="African church leaders and ministers united in faith"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <blockquote className="text-xl font-medium text-foreground mb-6 italic">
+                    "BCIF envisions a world where ministers are spiritually mature, theologically grounded, 
+                    and practically equipped to lead vibrant, impactful ministries that transform communities and nations."
+                  </blockquote>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
+                      <span className="text-primary-foreground font-bold">BCIF</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">Our Vision</p>
+                      <p className="text-sm text-muted-foreground">Global Revival & Transformation</p>
+                    </div>
                   </div>
                 </div>
               </div>
