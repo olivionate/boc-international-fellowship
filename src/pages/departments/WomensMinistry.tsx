@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Heart, Users, Crown, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import womensMinistryHero from "@/assets/womens-ministry-hero.jpg";
+import womensBibleStudy from "@/assets/womens-bible-study.jpg";
+import womensMentorship from "@/assets/womens-mentorship.jpg";
+import womensRetreat from "@/assets/womens-retreat.jpg";
 
 const WomensMinistry = () => {
   return (
@@ -77,7 +80,14 @@ const WomensMinistry = () => {
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Ministry Programs</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={womensBibleStudy} 
+                  alt="African women studying the Bible together in fellowship"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Women of Faith Bible Study</CardTitle>
                 <CardDescription>Weekly in-depth Scripture exploration</CardDescription>
@@ -90,7 +100,14 @@ const WomensMinistry = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={womensMentorship} 
+                  alt="African women in mentorship conversation sharing wisdom"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Mentorship Program</CardTitle>
                 <CardDescription>Connecting generations of women</CardDescription>
@@ -103,7 +120,14 @@ const WomensMinistry = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={womensRetreat} 
+                  alt="African women in worship during spiritual retreat outdoors"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Women's Retreats</CardTitle>
                 <CardDescription>Spiritual renewal and refreshing</CardDescription>
