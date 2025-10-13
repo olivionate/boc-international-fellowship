@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Menu, Phone, Mail, MapPin, Heart, Users, Calendar, Headphones, ChevronDown } from 'lucide-react';
+import bocLogo from '@/assets/boc-logo.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +75,7 @@ const Header = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/981dc698-340d-4400-aa57-c58c5a9a9bee.png" 
+                src={bocLogo} 
                 alt="Body of Christ International Fellowship Logo" 
                 className="w-16 h-16 object-contain"
               />

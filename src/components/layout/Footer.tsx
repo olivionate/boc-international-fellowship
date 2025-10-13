@@ -14,7 +14,7 @@ import {
   Clock,
   Calendar
 } from 'lucide-react';
-import bcifLogo from '/lovable-uploads/c9fcc8f7-2aee-47bc-8e18-6df1669bd974.png';
+import bocLogo from '@/assets/boc-logo.png';
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
                 <img 
-                  src={bcifLogo} 
+                  src={bocLogo} 
                   alt="BCIF Logo" 
                   className="w-10 h-10 object-contain"
                 />
