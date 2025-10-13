@@ -24,11 +24,11 @@ const Footer = () => {
           {/* Church Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full overflow-hidden bg-white flex items-center justify-center">
                 <img 
                   src={bocLogo} 
                   alt="BCIF Logo" 
-                  className="w-10 h-10 object-contain"
+                  className="w-14 h-14 object-contain"
                 />
               </div>
               <div>
