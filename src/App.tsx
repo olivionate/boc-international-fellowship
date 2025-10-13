@@ -9,7 +9,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Leadership from "./pages/Leadership";
 import Ministries from "./pages/Ministries";
-import Events from "./pages/Events";
 import Sermons from "./pages/Sermons";
 import SermonDetail from "./pages/SermonDetail";
 import SeriesList from "./pages/SeriesList";
@@ -50,7 +49,6 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/leadership" element={<Leadership />} />
               <Route path="/ministries" element={<Ministries />} />
-              <Route path="/events" element={<Events />} />
               <Route path="/sermons" element={<Sermons />} />
               <Route path="/sermons/:sermonSlug" element={<SermonDetail />} />
               <Route path="/sermons/series/:seriesSlug" element={<SeriesList />} />
