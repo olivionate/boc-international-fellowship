@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Coffee, Heart, HandHeart, Smile } from "lucide-react";
 import { Link } from "react-router-dom";
 import hospitalityHero from "@/assets/hospitality-department-hero.jpg";
+import hospitalityGuestServices from "@/assets/hospitality-guest-services.jpg";
+import hospitalityRefreshment from "@/assets/hospitality-refreshment.jpg";
+import hospitalityEventCoordination from "@/assets/hospitality-event-coordination.jpg";
 
 const HospitalityDepartment = () => {
   return (
@@ -76,7 +79,14 @@ const HospitalityDepartment = () => {
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={hospitalityGuestServices} 
+                  alt="African church greeters welcoming visitors with warm smiles"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Guest Services</CardTitle>
                 <CardDescription>First impressions that last</CardDescription>
@@ -89,7 +99,14 @@ const HospitalityDepartment = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={hospitalityRefreshment} 
+                  alt="African church members enjoying fellowship with refreshments"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Refreshment Ministry</CardTitle>
                 <CardDescription>Fellowship through food and drink</CardDescription>
@@ -102,7 +119,14 @@ const HospitalityDepartment = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={hospitalityEventCoordination} 
+                  alt="African hospitality team coordinating church event setup"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Event Coordination</CardTitle>
                 <CardDescription>Excellence in every detail</CardDescription>
