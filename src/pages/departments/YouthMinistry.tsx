@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Users, Zap, Target, Music } from "lucide-react";
 import { Link } from "react-router-dom";
 import youthMinistryHero from "@/assets/youth-ministry-hero.jpg";
+import youthYaConnect from "@/assets/youth-ya-connect.jpg";
+import youthLifeGroups from "@/assets/youth-life-groups.jpg";
+import youthLeadershipDevelopment from "@/assets/youth-leadership-development.jpg";
 
 const YouthMinistry = () => {
   return (
@@ -77,7 +80,14 @@ const YouthMinistry = () => {
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Our Programs</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={youthYaConnect} 
+                  alt="African young adults worshipping at contemporary church gathering"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>YA Connect</CardTitle>
                 <CardDescription>Weekly young adult gatherings</CardDescription>
@@ -90,7 +100,14 @@ const YouthMinistry = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={youthLifeGroups} 
+                  alt="African young adults in small group Bible study fellowship"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Life Groups</CardTitle>
                 <CardDescription>Small group discipleship</CardDescription>
@@ -103,7 +120,14 @@ const YouthMinistry = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={youthLeadershipDevelopment} 
+                  alt="African young adults in leadership training session"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Leadership Development</CardTitle>
                 <CardDescription>Training tomorrow's leaders</CardDescription>
