@@ -266,8 +266,8 @@ const Contact = () => {
               <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Heart className="h-8 w-8 text-accent-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-spirit-foreground mb-3">Wednesday Bible Study</h3>
-              <p className="text-muted-foreground mb-2">Dive deep into God's Word together</p>
+              <h3 className="text-xl font-bold text-spirit-foreground mb-3">Wednesday Healing & Restoration Service</h3>
+              <p className="text-muted-foreground mb-2">Experience divine healing and restoration</p>
               <p className="font-semibold">6:30 PM</p>
             </div>
 
@@ -275,8 +275,8 @@ const Contact = () => {
               <div className="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Heart className="h-8 w-8 text-secondary-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-spirit-foreground mb-3">Friday Prayer</h3>
-              <p className="text-muted-foreground mb-2">Unite in powerful intercession</p>
+              <h3 className="text-xl font-bold text-spirit-foreground mb-3">Friday Holy Spirit Outpouring Night</h3>
+              <p className="text-muted-foreground mb-2">Experience the power of the Holy Spirit</p>
               <p className="font-semibold">7:00 PM</p>
             </div>
           </div>
