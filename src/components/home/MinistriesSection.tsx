@@ -141,7 +141,7 @@ const MinistriesSection = () => {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/volunteer">
+                <Link to="/contact">
                   <Users className="h-5 w-5 mr-2" />
                   Volunteer With Us
                 </Link>
