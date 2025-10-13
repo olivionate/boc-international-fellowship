@@ -257,7 +257,7 @@ const Contact = () => {
               <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Clock className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-spirit-foreground mb-3">Sunday Worship</h3>
+              <h3 className="text-xl font-bold text-spirit-foreground mb-3">Sunday Main Worship Services</h3>
               <p className="text-muted-foreground mb-2">Join us for powerful worship and biblical teaching</p>
               <p className="font-semibold">8:00 AM & 10:30 AM</p>
             </div>
