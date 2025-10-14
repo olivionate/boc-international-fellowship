@@ -35,7 +35,7 @@ const MinistriesSection = () => {
       icon: GraduationCap,
       color: 'bg-accent',
       image: '/lovable-uploads/67e8ca79-39ed-4fc5-b023-e65d1a4be63d.png',
-      link: '/ministries/school'
+      link: '/ministries/school-of-ministry'
     },
     {
       title: 'BCIF Global Outreach Ministry',
