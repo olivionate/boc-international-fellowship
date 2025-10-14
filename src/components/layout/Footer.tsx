@@ -19,8 +19,8 @@ import bocLogo from '@/assets/boc-logo.png';
 const Footer = () => {
   return (
     <footer className="bg-gradient-worship text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Church Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
@@ -130,12 +130,12 @@ const Footer = () => {
             {/* Newsletter Signup */}
             <div className="mt-6">
               <h4 className="font-medium text-secondary mb-2">Stay Connected</h4>
-              <div className="flex space-x-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Input 
                   placeholder="Your email" 
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 flex-1"
                 />
-                <Button variant="secondary" size="sm">
+                <Button variant="secondary" size="sm" className="whitespace-nowrap touch-manipulation min-h-[40px]">
                   Subscribe
                 </Button>
               </div>
@@ -145,15 +145,15 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm opacity-80">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-xs sm:text-sm opacity-80 text-center md:text-left">
               © 2024 Body of Christ International Fellowship. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+              <Link to="/privacy" className="text-xs sm:text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <Link to="/terms" className="text-xs sm:text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Terms of Service
               </Link>
             </div>

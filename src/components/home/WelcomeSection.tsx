@@ -6,34 +6,34 @@ import visionPhoto from '@/assets/vision-photo.jpg';
 
 const WelcomeSection = () => {
   return (
-    <section className="section-gradient py-20">
+    <section className="section-gradient py-12 md:py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-up">
-            <h2 className="text-4xl md:text-5xl font-bold text-divine mb-6">
+          <div className="text-center mb-12 md:mb-16 animate-fade-up">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-divine mb-4 md:mb-6">
               A Beacon of Faith and Global Revival
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Founded on the unshakable pillars of biblical truth, spiritual empowerment, and global outreach, 
               BCIF serves as a lighthouse of faith, guiding believers toward spiritual maturity and igniting 
               transformation across nations.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <h3 className="text-3xl font-bold text-foreground">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-16">
+            <div className="space-y-6 md:space-y-8">
+              <div className="space-y-4 md:space-y-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                   Our Divine Mission
                 </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   At its core, BCIF is driven by a mission to glorify God by equipping faithful servants 
                   of Jesus Christ to edify the Body of Christ, make disciples of all nations, and spark 
                   spiritual revival worldwide.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                 <div className="card-ministry">
                   <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                     <Heart className="h-5 w-5 text-primary-foreground" />
@@ -59,7 +59,7 @@ const WelcomeSection = () => {
                 </div>
               </div>
 
-              <Button asChild size="lg" className="btn-divine">
+              <Button asChild size="lg" className="btn-divine w-full sm:w-auto touch-manipulation min-h-[48px]">
                 <Link to="/about">
                   Discover Our Story
                   <ArrowRight className="h-4 w-4 ml-2" />
@@ -101,8 +101,8 @@ const WelcomeSection = () => {
 
           {/* Core Values Preview */}
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-divine mb-8">Built on Solid Foundation</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <h3 className="text-xl md:text-2xl font-bold text-divine mb-6 md:mb-8">Built on Solid Foundation</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
               {[
                 'Biblical Authority',
                 'Christ-Centered Worship', 
@@ -111,11 +111,11 @@ const WelcomeSection = () => {
                 'Holistic Ministry',
                 'Excellence in Ministry'
               ].map((value, index) => (
-                <div key={value} className="card-divine text-center p-4">
-                  <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-2">
+                <div key={value} className="card-divine text-center p-3 md:p-4">
+                  <div className="w-7 h-7 md:w-8 md:h-8 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-2">
                     <span className="text-primary-foreground text-xs font-bold">{index + 1}</span>
                   </div>
-                  <p className="text-sm font-medium text-foreground">{value}</p>
+                  <p className="text-xs md:text-sm font-medium text-foreground leading-snug">{value}</p>
                 </div>
               ))}
             </div>

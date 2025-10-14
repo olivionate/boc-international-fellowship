@@ -28,20 +28,20 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-up">
-          <h1 className="hero-title text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
             Welcome to the 
-            <span className="block text-secondary text-glow">
+            <span className="block text-secondary text-glow mt-2">
               Body of Christ International Fellowship
             </span>
           </h1>
           
-          <p className="hero-subtitle text-white/90 mb-8">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8 px-4 leading-relaxed">
             A vibrant, Christ-centered church with a profound calling to impact the world 
             through spiritual empowerment, global outreach, and transformative worship.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button asChild size="lg" className="btn-worship">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-stretch sm:items-center mb-8 md:mb-12 px-4">
+            <Button asChild size="lg" className="btn-worship w-full sm:w-auto touch-manipulation min-h-[48px]">
               <Link to="/contact">
                 <Users className="h-5 w-5 mr-2" />
                 Plan Your Visit
@@ -49,7 +49,7 @@ const HeroSection = () => {
               </Link>
             </Button>
             
-            <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 w-full sm:w-auto touch-manipulation min-h-[48px]">
               <a href="https://boctv.co.ke/" target="_blank" rel="noopener noreferrer">
                 <Calendar className="h-5 w-5 mr-2" />
                 Watch Live Stream
@@ -58,29 +58,29 @@ const HeroSection = () => {
           </div>
 
           {/* Service Times */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="card-divine text-center bg-white/10 backdrop-blur-md border-white/20">
-              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
-                <Users className="h-6 w-6 text-secondary-foreground" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto px-4">
+            <div className="card-divine text-center bg-white/10 backdrop-blur-md border-white/20 p-4 md:p-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                <Users className="h-5 w-5 md:h-6 md:w-6 text-secondary-foreground" />
               </div>
-              <h3 className="font-bold text-white mb-2">Sunday Main Worship Services</h3>
-              <p className="text-white/80 text-sm">8:00 AM & 10:30 AM</p>
+              <h3 className="font-bold text-white mb-1 md:mb-2 text-sm md:text-base">Sunday Main Worship Services</h3>
+              <p className="text-white/80 text-xs md:text-sm">8:00 AM & 10:30 AM</p>
             </div>
 
-            <div className="card-divine text-center bg-white/10 backdrop-blur-md border-white/20">
-              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
-                <Heart className="h-6 w-6 text-secondary-foreground" />
+            <div className="card-divine text-center bg-white/10 backdrop-blur-md border-white/20 p-4 md:p-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                <Heart className="h-5 w-5 md:h-6 md:w-6 text-secondary-foreground" />
               </div>
-              <h3 className="font-bold text-white mb-2">Wednesday Healing & Restoration Service</h3>
-              <p className="text-white/80 text-sm">Wednesday 6:30 PM</p>
+              <h3 className="font-bold text-white mb-1 md:mb-2 text-sm md:text-base">Wednesday Healing & Restoration Service</h3>
+              <p className="text-white/80 text-xs md:text-sm">Wednesday 6:30 PM</p>
             </div>
 
-            <div className="card-divine text-center bg-white/10 backdrop-blur-md border-white/20">
-              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
-                <Calendar className="h-6 w-6 text-secondary-foreground" />
+            <div className="card-divine text-center bg-white/10 backdrop-blur-md border-white/20 p-4 md:p-6 sm:col-span-2 md:col-span-1">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                <Calendar className="h-5 w-5 md:h-6 md:w-6 text-secondary-foreground" />
               </div>
-              <h3 className="font-bold text-white mb-2">Friday Holy Spirit Outpouring Night</h3>
-              <p className="text-white/80 text-sm">Friday 9:00 PM - 5:00 AM</p>
+              <h3 className="font-bold text-white mb-1 md:mb-2 text-sm md:text-base">Friday Holy Spirit Outpouring Night</h3>
+              <p className="text-white/80 text-xs md:text-sm">Friday 9:00 PM - 5:00 AM</p>
             </div>
           </div>
         </div>

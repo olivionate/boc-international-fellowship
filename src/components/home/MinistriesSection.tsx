@@ -72,46 +72,46 @@ const MinistriesSection = () => {
   ];
 
   return (
-    <section className="section-worship py-20">
+    <section className="section-worship py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-divine mb-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-up">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-divine mb-4 md:mb-6">
             Our Ministry Arms
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Through strategic ministry initiatives, we equip leaders, reach the lost, 
             and glorify God while fulfilling our divine mandate to impact the world.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
           {ministries.map((ministry, index) => {
             const IconComponent = ministry.icon;
             return (
               <div key={ministry.title} className="card-divine group hover:shadow-glow overflow-hidden">
                 {/* Image */}
-                <div className="relative h-48 mb-6 overflow-hidden rounded-lg">
+                <div className="relative h-40 md:h-48 mb-4 md:mb-6 overflow-hidden rounded-lg">
                   <img 
                     src={ministry.image} 
                     alt={ministry.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                  <div className={`absolute top-4 left-4 w-12 h-12 ${ministry.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                    <IconComponent className="h-6 w-6 text-white" />
+                  <div className={`absolute top-3 left-3 md:top-4 md:left-4 w-10 h-10 md:w-12 md:h-12 ${ministry.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                    <IconComponent className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors px-6">
+                <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 md:mb-3 group-hover:text-primary transition-colors px-4 md:px-6">
                   {ministry.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed px-6">
+                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 leading-relaxed px-4 md:px-6">
                   {ministry.description}
                 </p>
                 
-                <div className="px-6 pb-6">
-                  <Button asChild variant="outline" className="w-full group-hover:border-primary group-hover:text-primary">
+                <div className="px-4 md:px-6 pb-4 md:pb-6">
+                  <Button asChild variant="outline" className="w-full group-hover:border-primary group-hover:text-primary touch-manipulation min-h-[44px]">
                     <Link to={ministry.link}>
                       Learn More
                       <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -124,23 +124,23 @@ const MinistriesSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center card-divine bg-gradient-subtle p-12">
+        <div className="text-center card-divine bg-gradient-subtle p-6 md:p-12">
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-3xl font-bold text-divine mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-divine mb-3 md:mb-4">
               Join Our Ministry Family
             </h3>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
               Whether you're called to leadership, worship, outreach, or education, 
               there's a place for you in our global ministry family.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="btn-divine">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+              <Button asChild size="lg" className="btn-divine w-full sm:w-auto touch-manipulation min-h-[48px]">
                 <Link to="/ministries">
                   <Heart className="h-5 w-5 mr-2" />
                   Explore All Ministries
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline">
+              <Button asChild size="lg" variant="outline" className="w-full sm:w-auto touch-manipulation min-h-[48px]">
                 <Link to="/contact">
                   <Users className="h-5 w-5 mr-2" />
                   Volunteer With Us
