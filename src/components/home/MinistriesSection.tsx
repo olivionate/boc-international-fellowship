@@ -27,7 +27,7 @@ const MinistriesSection = () => {
       icon: Users,
       color: 'bg-primary',
       image: '/lovable-uploads/391b9e36-116d-4102-b16b-5701261c7362.png',
-      link: '/ministries/global-assembly'
+      link: '/ministries/global-ministers-assembly'
     },
     {
       title: 'BCIF School of Ministry',
