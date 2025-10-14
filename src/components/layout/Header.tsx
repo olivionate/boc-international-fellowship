@@ -197,21 +197,156 @@ const Header = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] sm:w-[320px] overflow-y-auto">
-                <div className="flex flex-col space-y-6 mt-8">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      to={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className={`text-base sm:text-lg font-medium transition-colors hover:text-primary py-2 ${
-                        location.pathname === item.href
-                          ? 'text-primary'
-                          : 'text-foreground'
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                <div className="flex flex-col space-y-4 mt-8">
+                  {navItems.map((item) => {
+                    // Ministries dropdown
+                    if (item.label === 'Ministries') {
+                      return (
+                        <div key={item.href} className="space-y-2">
+                          <Link
+                            to={item.href}
+                            onClick={() => setIsOpen(false)}
+                            className={`text-base sm:text-lg font-medium transition-colors hover:text-primary py-2 block ${
+                              location.pathname === item.href
+                                ? 'text-primary'
+                                : 'text-foreground'
+                            }`}
+                          >
+                            {item.label}
+                          </Link>
+                          <div className="pl-4 space-y-2 border-l-2 border-border">
+                            <Link
+                              to="/ministries/global-ministers-assembly"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Global Ministers Assembly
+                            </Link>
+                            <Link
+                              to="/ministries/school-of-ministry"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              School of Ministry
+                            </Link>
+                            <Link
+                              to="/ministries/global-outreach"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Global Outreach
+                            </Link>
+                            <Link
+                              to="/ministries/music-academy"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Music Academy
+                            </Link>
+                            <Link
+                              to="/ministries/boc-tv"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              BOC TV
+                            </Link>
+                            <Link
+                              to="/ministries/prayer-ministry"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Prayer Ministry
+                            </Link>
+                          </div>
+                        </div>
+                      );
+                    }
+                    
+                    // Departments dropdown
+                    if (item.label === 'Departments') {
+                      return (
+                        <div key={item.href} className="space-y-2">
+                          <span className="text-base sm:text-lg font-medium text-foreground py-2 block">
+                            {item.label}
+                          </span>
+                          <div className="pl-4 space-y-2 border-l-2 border-border">
+                            <Link
+                              to="/departments/mens-empowerment"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Men's Empowerment Fellowship
+                            </Link>
+                            <Link
+                              to="/departments/womens-ministry"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Women's Ministry
+                            </Link>
+                            <Link
+                              to="/departments/hospitality"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Hospitality Department
+                            </Link>
+                            <Link
+                              to="/departments/youth-ministry"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Youth Ministry
+                            </Link>
+                            <Link
+                              to="/departments/teens-ministry"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Teens Ministry
+                            </Link>
+                            <Link
+                              to="/departments/sunday-school"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Sunday School
+                            </Link>
+                            <Link
+                              to="/departments/praise-worship"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Praise & Worship Ministry
+                            </Link>
+                            <Link
+                              to="/departments/compassion-mercy"
+                              onClick={() => setIsOpen(false)}
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Compassion & Mercy Ministry
+                            </Link>
+                          </div>
+                        </div>
+                      );
+                    }
+                    
+                    // Regular nav items
+                    return (
+                      <Link
+                        key={item.href}
+                        to={item.href}
+                        onClick={() => setIsOpen(false)}
+                        className={`text-base sm:text-lg font-medium transition-colors hover:text-primary py-2 ${
+                          location.pathname === item.href
+                            ? 'text-primary'
+                            : 'text-foreground'
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
                   <div className="pt-4 border-t border-border space-y-3">
                     <Button asChild className="btn-divine w-full touch-manipulation">
                       <Link to="/give" onClick={() => setIsOpen(false)}>
