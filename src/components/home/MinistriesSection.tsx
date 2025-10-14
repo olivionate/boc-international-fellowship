@@ -43,7 +43,7 @@ const MinistriesSection = () => {
       icon: Globe,
       color: 'bg-secondary',
       image: outreachImg,
-      link: '/ministries/outreach'
+      link: '/ministries/global-outreach'
     },
     {
       title: 'BCIF Music Academy',
@@ -51,7 +51,7 @@ const MinistriesSection = () => {
       icon: Music,
       color: 'bg-primary',
       image: musicImg,
-      link: '/ministries/music'
+      link: '/ministries/music-academy'
     },
     {
       title: 'BOC TV',
@@ -59,7 +59,7 @@ const MinistriesSection = () => {
       icon: Tv,
       color: 'bg-accent',
       image: tvImg,
-      link: '/ministries/tv'
+      link: '/ministries/boc-tv'
     },
     {
       title: 'Prayer and Intercession Ministry',
@@ -67,7 +67,7 @@ const MinistriesSection = () => {
       icon: Hand,
       color: 'bg-secondary',
       image: '/lovable-uploads/0aed0a5d-f745-4c37-aff8-5d98e2cb86cf.png',
-      link: '/ministries/prayer-intercession'
+      link: '/ministries/prayer-ministry'
     }
   ];
 
