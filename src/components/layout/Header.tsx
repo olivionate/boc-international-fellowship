@@ -180,7 +180,7 @@ const Header = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="hidden lg:flex items-center space-x-4 flex-shrink-0">
+            <div className="hidden lg:flex items-center space-x-4 flex-shrink-0 ml-8">
               <Button asChild className="btn-divine">
                 <Link to="/give">
                   <Heart className="h-4 w-4 mr-2" />
