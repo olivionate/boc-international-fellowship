@@ -7,7 +7,7 @@ import {
   Phone, 
   Mail, 
   Facebook, 
-  Instagram, 
+  Linkedin, 
   Youtube, 
   Twitter,
   Heart,
@@ -46,8 +46,10 @@ const Footer = () => {
                   <Facebook className="h-4 w-4" />
                 </a>
               </Button>
-              <Button size="icon" variant="ghost" className="hover:bg-white/20">
-                <Instagram className="h-4 w-4" />
+              <Button size="icon" variant="ghost" className="hover:bg-white/20" asChild>
+                <a href="https://www.linkedin.com/company/body-of-christ-international-fellowship/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-4 w-4" />
+                </a>
               </Button>
               <Button size="icon" variant="ghost" className="hover:bg-white/20" asChild>
                 <a href="https://www.youtube.com/@BOCFellowshipKe" target="_blank" rel="noopener noreferrer">
