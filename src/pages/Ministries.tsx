@@ -278,12 +278,6 @@ const Ministries = () => {
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link to="/events">
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Upcoming Events
-                </Link>
-              </Button>
             </div>
           </div>
         </div>
