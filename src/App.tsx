@@ -15,6 +15,7 @@ import SeriesList from "./pages/SeriesList";
 import Contact from "./pages/Contact";
 import Give from "./pages/Give";
 import PrayerRequest from "./pages/PrayerRequest";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 // Ministry pages
 import GlobalMinistersAssembly from "./pages/ministries/GlobalMinistersAssembly";
@@ -55,6 +56,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/give" element={<Give />} />
               <Route path="/prayer-request" element={<PrayerRequest />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
               {/* Ministry routes */}
               <Route path="/ministries/global-ministers-assembly" element={<GlobalMinistersAssembly />} />
               <Route path="/ministries/school-of-ministry" element={<SchoolOfMinistry />} />
