@@ -279,7 +279,8 @@ const BOCTV = () => {
                   title: 'Watch Live',
                   description: 'Stream our content live at boctv.co.ke',
                   icon: Tv,
-                  action: 'Watch Now'
+                  action: 'Watch Now',
+                  link: 'https://boctv.co.ke/'
                 },
                 {
                   title: 'Contact Us',
@@ -308,7 +309,13 @@ const BOCTV = () => {
                     </div>
                     <h3 className="text-lg font-bold text-foreground mb-3">{contact.title}</h3>
                     <p className="text-sm text-muted-foreground mb-4">{contact.description}</p>
-                    <Button variant="outline" size="sm">{contact.action}</Button>
+                    {contact.link ? (
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={contact.link} target="_blank" rel="noopener noreferrer">{contact.action}</a>
+                      </Button>
+                    ) : (
+                      <Button variant="outline" size="sm">{contact.action}</Button>
+                    )}
                   </div>
                 );
               })}
