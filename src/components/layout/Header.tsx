@@ -106,22 +106,22 @@ const Header = () => {
                           <Link to="/ministries" className="w-full">All Ministries</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/global-ministers-assembly" className="w-full">Global Ministers Assembly</Link>
+                          <Link to="/ministries/global-ministers-assembly" className="w-full">BCIF Global Ministers Assembly</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/school-of-ministry" className="w-full">School of Ministry</Link>
+                          <Link to="/ministries/school-of-ministry" className="w-full">BCIF School of Ministry</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/global-outreach" className="w-full">Global Outreach</Link>
+                          <Link to="/ministries/global-outreach" className="w-full">BCIF Global Outreach Ministry</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/music-academy" className="w-full">Music Academy</Link>
+                          <Link to="/ministries/music-academy" className="w-full">BCIF Music Academy</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/boc-tv" className="w-full">BOC TV</Link>
+                          <Link to="/ministries/boc-tv" className="w-full">The Body of Christ TV</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/prayer-ministry" className="w-full">Prayer Ministry</Link>
+                          <Link to="/ministries/prayer-ministry" className="w-full">Prayer and Intercession Ministry</Link>
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
@@ -220,42 +220,42 @@ const Header = () => {
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              Global Ministers Assembly
+                              BCIF Global Ministers Assembly
                             </Link>
                             <Link
                               to="/ministries/school-of-ministry"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              School of Ministry
+                              BCIF School of Ministry
                             </Link>
                             <Link
                               to="/ministries/global-outreach"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              Global Outreach
+                              BCIF Global Outreach Ministry
                             </Link>
                             <Link
                               to="/ministries/music-academy"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              Music Academy
+                              BCIF Music Academy
                             </Link>
                             <Link
                               to="/ministries/boc-tv"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              BOC TV
+                              The Body of Christ TV
                             </Link>
                             <Link
                               to="/ministries/prayer-ministry"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              Prayer Ministry
+                              Prayer and Intercession Ministry
                             </Link>
                           </div>
                         </div>

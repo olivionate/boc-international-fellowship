@@ -23,7 +23,7 @@ const GlobalOutreachMinistry = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              Global Outreach Ministry
+              BCIF Global Outreach Ministry
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Making Disciples of All Nations Through Evangelistic Campaigns and Community Development
@@ -58,7 +58,7 @@ const GlobalOutreachMinistry = () => {
               <div className="p-6">
                 <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The Body of Christ Global Outreach Ministry embodies BCIF's commitment to fulfilling the Great Commission 
+                  The BCIF Global Outreach Ministry embodies BCIF's commitment to fulfilling the Great Commission 
                   by making disciples of all nations. This ministry serves as the church's evangelistic and missional arm, 
                   spearheading initiatives that extend the Gospel's reach to diverse regions and people groups.
                 </p>

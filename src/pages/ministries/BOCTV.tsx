@@ -23,7 +23,7 @@ const BOCTV = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              Body of Christ TV (BOC TV)
+              The Body of Christ TV
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Media Ministry for Global Impact and Spiritual Development
@@ -217,7 +217,7 @@ const BOCTV = () => {
             <div>
               <h2 className="text-3xl font-bold text-divine mb-6">Strategic Global Position</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Broadcasting from Nairobi, Kenya, BOC TV occupies a strategic position in a region where Christianity 
+                Broadcasting from Nairobi, Kenya, The Body of Christ TV occupies a strategic position in a region where Christianity 
                 is rapidly growing. As an independent station with global partnerships, we maintain balance between 
                 contextual relevance and universal appeal, reaching diverse audiences worldwide.
               </p>
@@ -319,7 +319,7 @@ const BOCTV = () => {
           <div className="card-divine bg-gradient-subtle p-12 text-center">
             <h2 className="text-4xl font-bold text-divine mb-6">Join Our Media Mission</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              BOC TV fulfills its calling as a beacon of light in the Christian broadcasting landscape. 
+              The Body of Christ TV fulfills its calling as a beacon of light in the Christian broadcasting landscape. 
               By fostering unity, grounding viewers in sound doctrine, deepening their knowledge of Scripture, 
               and drawing them closer to Jesus, we serve the global Church's growth and mission.
             </p>

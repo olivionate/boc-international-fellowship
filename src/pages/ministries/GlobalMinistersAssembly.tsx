@@ -28,7 +28,7 @@ const GlobalMinistersAssembly = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              Body of Christ Global Ministers Assembly
+              BCIF Global Ministers Assembly
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Empowering Gospel Ministers Worldwide Through Holistic Development and Global Fellowship
@@ -85,7 +85,7 @@ const GlobalMinistersAssembly = () => {
                 </div>
                 <h2 className="text-3xl font-bold text-divine mb-6">Our Vision</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The Body of Christ Global Ministers Assembly envisions a global network of Spirit-led ministers who are fully 
+                  The BCIF Global Ministers Assembly envisions a global network of Spirit-led ministers who are fully 
                   equipped, deeply inspired, and united in their pursuit of God's purpose. We strive to see ministers who are 
                   not only effective in their local contexts but also globally influential, carrying the Gospel with boldness 
                   and compassion. Our vision is to create a vibrant, interconnected community where ministers are continually 

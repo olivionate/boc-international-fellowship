@@ -23,7 +23,7 @@ const MusicAcademy = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              Body of Christ Music Academy
+              BCIF Music Academy
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Transformative Worship Training for Spirit-Filled Musical Excellence
@@ -58,7 +58,7 @@ const MusicAcademy = () => {
               <div className="p-6">
                 <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Worship is at the heart of BCIF's identity, and the Body of Christ Music Academy is a vibrant expression 
+                  Worship is at the heart of BCIF's identity, and the BCIF Music Academy is a vibrant expression 
                   of this commitment. The academy exists to train worship leaders, musicians, and vocalists to lead 
                   transformative, Spirit-filled worship experiences that draw people into God's presence.
                 </p>

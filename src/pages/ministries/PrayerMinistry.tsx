@@ -23,7 +23,7 @@ const PrayerMinistry = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              Prayer & Intercessory Ministry
+              Prayer and Intercession Ministry
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Fostering a Culture of Prayer and Spiritual Dependence on the Holy Spirit
@@ -58,7 +58,7 @@ const PrayerMinistry = () => {
               <div className="p-6">
                 <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The Prayer and Intercessory Ministry is dedicated to fostering a deep culture of prayer and spiritual 
+                  The Prayer and Intercession Ministry is dedicated to fostering a deep culture of prayer and spiritual 
                   dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer 
                   chains that strengthen the Body of Christ and advance God's Kingdom purposes.
                 </p>
