@@ -35,7 +35,7 @@ const Give = () => {
       impact: 'Supports missionaries, crusades, and international outreach programs'
     },
     {
-      title: 'School of Ministry',
+      title: 'BCIF School of Ministry',
       description: 'Invest in training the next generation of church leaders through theological education and development.',
       icon: Users,
       impact: 'Provides scholarships, resources, and faculty support for students'
@@ -167,7 +167,7 @@ const Give = () => {
                     </label>
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="radio" name="givingType" value="school" className="text-primary" />
-                      <span>School of Ministry</span>
+                      <span>BCIF School of Ministry</span>
                     </label>
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="radio" name="givingType" value="outreach" className="text-primary" />
