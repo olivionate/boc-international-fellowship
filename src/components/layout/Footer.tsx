@@ -49,8 +49,10 @@ const Footer = () => {
               <Button size="icon" variant="ghost" className="hover:bg-white/20">
                 <Instagram className="h-4 w-4" />
               </Button>
-              <Button size="icon" variant="ghost" className="hover:bg-white/20">
-                <Youtube className="h-4 w-4" />
+              <Button size="icon" variant="ghost" className="hover:bg-white/20" asChild>
+                <a href="https://www.youtube.com/@BOCFellowshipKe" target="_blank" rel="noopener noreferrer">
+                  <Youtube className="h-4 w-4" />
+                </a>
               </Button>
               <Button size="icon" variant="ghost" className="hover:bg-white/20">
                 <Twitter className="h-4 w-4" />
