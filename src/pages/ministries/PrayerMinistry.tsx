@@ -14,7 +14,7 @@ const PrayerMinistry = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="Prayer and Intercessory Ministry" 
+            alt="Prayer and Intercession Ministry"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-accent/80"></div>

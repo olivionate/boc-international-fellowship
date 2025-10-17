@@ -106,7 +106,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'Prayer and Intercessory Ministry',
+      title: 'Prayer and Intercession Ministry',
       subtitle: 'Fostering a Culture of Prayer',
       description: 'Fostering a deep culture of prayer and spiritual dependence on the Holy Spirit through corporate prayer meetings, intercession groups, and 24/7 prayer chains that strengthen the Body of Christ.',
       icon: Hand,
