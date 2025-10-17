@@ -8,8 +8,7 @@ import {
   Mail, 
   Facebook, 
   Linkedin, 
-  Youtube, 
-  Twitter,
+  Youtube,
   Heart,
   Clock,
   Calendar
@@ -55,9 +54,6 @@ const Footer = () => {
                 <a href="https://www.youtube.com/@BOCFellowshipKe" target="_blank" rel="noopener noreferrer">
                   <Youtube className="h-4 w-4" />
                 </a>
-              </Button>
-              <Button size="icon" variant="ghost" className="hover:bg-white/20">
-                <Twitter className="h-4 w-4" />
               </Button>
             </div>
           </div>
