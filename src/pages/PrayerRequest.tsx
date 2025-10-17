@@ -265,7 +265,7 @@ const PrayerRequest = () => {
       <section className="section-worship py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-divine mb-6">Our Prayer Ministry</h2>
+            <h2 className="text-4xl font-bold text-divine mb-6">Our Prayer and Intercession Ministry</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Learn more about how we intercede and support our church family through prayer
             </p>

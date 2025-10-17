@@ -26,7 +26,7 @@ import joinPrayerMinistry from '@/assets/join-prayer-ministry.jpg';
 const Ministries = () => {
   const mainMinistries = [
     {
-      title: 'BOC Global Ministers Assembly',
+      title: 'BCIF Global Ministers Assembly',
       subtitle: 'Empowering Gospel Ministers Worldwide',
       description: 'A global ministry committed to the holistic development of Gospel Ministers through comprehensive support, training, and fellowship. Our monthly gatherings across various countries create dynamic platforms for ministers to connect, learn, and grow.',
       icon: Users,
@@ -41,7 +41,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'Body of Christ School of Ministry',
+      title: 'BCIF School of Ministry',
       subtitle: 'Premier Theological Education',
       description: 'A premier institution dedicated to theological education and leadership development, offering comprehensive curriculum tailored to equip pastors, evangelists, missionaries, and lay leaders for impactful service.',
       icon: GraduationCap,
@@ -56,7 +56,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'Global Outreach Ministry',
+      title: 'BCIF Global Outreach Ministry',
       subtitle: 'Making Disciples of All Nations',
       description: 'Embodying our commitment to fulfilling the Great Commission through evangelistic campaigns, church planting, and community development projects that address both spiritual and material needs.',
       icon: Globe,
@@ -71,7 +71,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'Body of Christ Music Academy',
+      title: 'BCIF Music Academy',
       subtitle: 'Transformative Worship Training',
       description: 'Training worship leaders, musicians, and vocalists to lead Spirit-filled worship experiences that draw people into God\'s presence, blending technical excellence with spiritual sensitivity.',
       icon: Music,
@@ -86,7 +86,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'Body of Christ TV (BOC TV)',
+      title: 'The Body of Christ TV [BOC TV]',
       subtitle: 'Media Ministry for Global Impact',
       description: 'Our media arm impacting the Body of Christ for growth and development in unity, doctrine, knowledge of scriptures, and a firm relationship with Jesus Christ through television broadcasting.',
       icon: Tv,

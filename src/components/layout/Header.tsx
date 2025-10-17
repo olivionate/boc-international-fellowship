@@ -118,7 +118,7 @@ const Header = () => {
                           <Link to="/ministries/music-academy" className="w-full">BCIF Music Academy</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/boc-tv" className="w-full">The Body of Christ TV</Link>
+                          <Link to="/ministries/boc-tv" className="w-full">The Body of Christ TV [BOC TV]</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/ministries/prayer-ministry" className="w-full">Prayer and Intercession Ministry</Link>
@@ -248,7 +248,7 @@ const Header = () => {
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              The Body of Christ TV
+                              The Body of Christ TV [BOC TV]
                             </Link>
                             <Link
                               to="/ministries/prayer-ministry"

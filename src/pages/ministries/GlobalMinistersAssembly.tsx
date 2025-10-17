@@ -19,7 +19,7 @@ const GlobalMinistersAssembly = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="BOC Global Ministers Assembly" 
+            alt="BCIF Global Ministers Assembly"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-accent/80"></div>
