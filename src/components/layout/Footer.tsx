@@ -128,20 +128,6 @@ const Footer = () => {
                 <p className="text-sm">info@thebocfellowship.org</p>
               </div>
             </div>
-            
-            {/* Newsletter Signup */}
-            <div className="mt-6">
-              <h4 className="font-medium text-secondary mb-2">Stay Connected</h4>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <Input 
-                  placeholder="Your email" 
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 flex-1"
-                />
-                <Button variant="secondary" size="sm" className="whitespace-nowrap touch-manipulation min-h-[40px]">
-                  Subscribe
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
 
