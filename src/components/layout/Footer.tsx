@@ -41,8 +41,10 @@ const Footer = () => {
               the world through spiritual empowerment and global outreach.
             </p>
             <div className="flex space-x-3">
-              <Button size="icon" variant="ghost" className="hover:bg-white/20">
-                <Facebook className="h-4 w-4" />
+              <Button size="icon" variant="ghost" className="hover:bg-white/20" asChild>
+                <a href="https://www.facebook.com/bocintfellowship" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-4 w-4" />
+                </a>
               </Button>
               <Button size="icon" variant="ghost" className="hover:bg-white/20">
                 <Instagram className="h-4 w-4" />
