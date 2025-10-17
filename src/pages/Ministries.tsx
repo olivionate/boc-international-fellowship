@@ -32,6 +32,7 @@ const Ministries = () => {
       icon: Users,
       color: 'bg-primary',
       photo: joinGlobalAssembly,
+      link: '/ministries/global-ministers-assembly',
       features: [
         'Monthly global gatherings',
         'Fellowship and networking',
@@ -47,6 +48,7 @@ const Ministries = () => {
       icon: GraduationCap,
       color: 'bg-accent',
       photo: joinSchoolMinistry,
+      link: '/ministries/school-of-ministry',
       features: [
         'Biblical exegesis courses',
         'Systematic theology',
@@ -62,6 +64,7 @@ const Ministries = () => {
       icon: Globe,
       color: 'bg-secondary',
       photo: joinOutreachMinistry,
+      link: '/ministries/global-outreach',
       features: [
         'Evangelistic crusades',
         'Church planting initiatives',
@@ -77,6 +80,7 @@ const Ministries = () => {
       icon: Music,
       color: 'bg-primary',
       photo: joinMusicAcademy,
+      link: '/ministries/music-academy',
       features: [
         'Music theory and performance',
         'Worship leadership training',
@@ -92,6 +96,7 @@ const Ministries = () => {
       icon: Tv,
       color: 'bg-accent',
       photo: joinTvMinistry,
+      link: '/ministries/boc-tv',
       features: [
         'Bible exposition programs',
         'Spirit concert broadcasts',
@@ -107,6 +112,7 @@ const Ministries = () => {
       icon: Hand,
       color: 'bg-secondary',
       photo: joinPrayerMinistry,
+      link: '/ministries/prayer-ministry',
       features: [
         'Corporate prayer meetings',
         'Intercession groups',
@@ -167,9 +173,11 @@ const Ministries = () => {
                       </ul>
                     </div>
                     
-                    <Button className="btn-divine">
-                      Learn More
-                      <ArrowRight className="h-4 w-4 ml-2" />
+                    <Button asChild className="btn-divine">
+                      <Link to={ministry.link}>
+                        Learn More
+                        <ArrowRight className="h-4 w-4 ml-2" />
+                      </Link>
                     </Button>
                   </div>
                   
