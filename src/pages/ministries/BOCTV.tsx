@@ -286,19 +286,22 @@ const BOCTV = () => {
                   title: 'Contact Us',
                   description: 'info@boctv.co.ke | +254 736 325 788',
                   icon: Globe,
-                  action: 'Get in Touch'
+                  action: 'Get in Touch',
+                  link: 'https://boctv.co.ke/'
                 },
                 {
                   title: 'Program Schedule',
                   description: 'Check our weekly programming lineup',
                   icon: Calendar,
-                  action: 'View Schedule'
+                  action: 'View Schedule',
+                  link: 'https://boctv.co.ke/'
                 },
                 {
                   title: 'Partnership',
                   description: 'Join our mission through support and prayer',
                   icon: Users,
-                  action: 'Partner With Us'
+                  action: 'Partner With Us',
+                  link: 'https://boctv.co.ke/'
                 }
               ].map((contact) => {
                 const IconComponent = contact.icon;
@@ -309,13 +312,9 @@ const BOCTV = () => {
                     </div>
                     <h3 className="text-lg font-bold text-foreground mb-3">{contact.title}</h3>
                     <p className="text-sm text-muted-foreground mb-4">{contact.description}</p>
-                    {contact.link ? (
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={contact.link} target="_blank" rel="noopener noreferrer">{contact.action}</a>
-                      </Button>
-                    ) : (
-                      <Button variant="outline" size="sm">{contact.action}</Button>
-                    )}
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={contact.link} target="_blank" rel="noopener noreferrer">{contact.action}</a>
+                    </Button>
                   </div>
                 );
               })}
