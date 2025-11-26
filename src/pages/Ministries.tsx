@@ -26,7 +26,7 @@ import joinPrayerMinistry from '@/assets/join-prayer-ministry.jpg';
 const Ministries = () => {
   const mainMinistries = [
     {
-      title: 'BCIF Global Ministers Assembly',
+      title: 'BCIF Global Ministers Network',
       subtitle: 'Empowering Gospel Ministers Worldwide',
       description: 'A global ministry committed to the holistic development of Gospel Ministers through comprehensive support, training, and fellowship. Our monthly gatherings across various countries create dynamic platforms for ministers to connect, learn, and grow.',
       icon: Users,
