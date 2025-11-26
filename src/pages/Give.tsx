@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -182,9 +183,15 @@ const Give = () => {
                     Frequency
                   </label>
                   <div className="flex gap-2">
-                    <Button variant="outline" className="flex-1">One Time</Button>
-                    <Button variant="outline" className="flex-1">Monthly</Button>
-                    <Button variant="outline" className="flex-1">Weekly</Button>
+                    <Button variant="outline" className="flex-1" asChild>
+                      <Link to="/give/one-time">One Time</Link>
+                    </Button>
+                    <Button variant="outline" className="flex-1" asChild>
+                      <Link to="/give/monthly">Monthly</Link>
+                    </Button>
+                    <Button variant="outline" className="flex-1" asChild>
+                      <Link to="/give/weekly">Weekly</Link>
+                    </Button>
                   </div>
                 </div>
 
@@ -209,10 +216,12 @@ const Give = () => {
                   </div>
                 </div>
 
-                <Button size="lg" className="btn-divine w-full">
-                  <Heart className="h-5 w-5 mr-2" />
-                  Continue to Payment
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                <Button size="lg" className="btn-divine w-full" asChild>
+                  <Link to="/give/payment">
+                    <Heart className="h-5 w-5 mr-2" />
+                    Continue to Payment
+                    <ArrowRight className="h-4 w-4 ml-2" />
+                  </Link>
                 </Button>
 
                 {/* Security Note */}
