@@ -106,7 +106,7 @@ const Header = () => {
                           <Link to="/ministries" className="w-full">All Ministries</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/global-ministers-assembly" className="w-full">BCIF Global Ministers Assembly</Link>
+                          <Link to="/ministries/global-ministers-assembly" className="w-full">BCIF Global Ministers Network</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/ministries/school-of-ministry" className="w-full">BCIF School of Ministry</Link>
@@ -220,7 +220,7 @@ const Header = () => {
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              BCIF Global Ministers Assembly
+                              BCIF Global Ministers Network
                             </Link>
                             <Link
                               to="/ministries/school-of-ministry"

@@ -22,7 +22,7 @@ import tvImg from '@/assets/ministry-tv.jpg';
 const MinistriesSection = () => {
   const ministries = [
     {
-      title: 'BCIF Global Ministers Assembly',
+      title: 'BCIF Global Ministers Network',
       description: 'Empowering Gospel Ministers worldwide through comprehensive support, training, and fellowship that nurtures spiritual, emotional, and practical capacities.',
       icon: Users,
       color: 'bg-primary',
