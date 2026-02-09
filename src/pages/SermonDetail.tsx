@@ -20,7 +20,7 @@ const SermonDetail = () => {
     {
       slug: 'discovering-your-divine-assignment',
       title: 'Discovering Your Divine Assignment',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-07',
       duration: 'Read Time: 15 min',
       series: 'Walking in Divine Purpose',
@@ -209,7 +209,7 @@ Trust God to guide you into the fullness of your divine assignment. He who began
     {
       slug: 'walking-by-faith-not-sight',
       title: 'Walking by Faith, Not Sight',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-14',
       duration: 'Read Time: 18 min',
       series: 'Walking in Divine Purpose',
@@ -410,7 +410,7 @@ Remember: Faith sees the invisible, believes the incredible, and receives the im
     {
       slug: 'overcoming-fear-and-doubt',
       title: 'Overcoming Fear and Doubt',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-21',
       duration: 'Read Time: 16 min',
       series: 'Walking in Divine Purpose',
@@ -573,7 +573,7 @@ Stand strong, walk in faith, and watch God turn your greatest fears into opportu
     {
       slug: 'the-power-of-prophetic-vision',
       title: 'The Power of Prophetic Vision',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-28',
       duration: 'Read Time: 20 min',
       series: 'Walking in Divine Purpose',
@@ -639,7 +639,7 @@ Remember, without vision, people perish, but with God's revelation, we flourish 
     {
       slug: 'seasons-of-preparation',
       title: 'Seasons of Preparation',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-02-04',
       duration: 'Read Time: 17 min',
       series: 'Walking in Divine Purpose',
@@ -706,7 +706,7 @@ Remember, every wilderness has an end, and every preparation season leads to pro
     {
       slug: 'divine-timing-and-patience',
       title: 'Divine Timing and Patience',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-02-11',
       duration: 'Read Time: 19 min',
       series: 'Walking in Divine Purpose',
@@ -999,7 +999,7 @@ Remember, those who wait on the Lord will renew their strength and soar like eag
     {
       slug: 'called-to-serve',
       title: 'Called to Serve',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-03-03',
       duration: 'Read Time: 16 min',
       series: 'Ministry Foundations',
@@ -1302,7 +1302,7 @@ Remember: true greatness in God's kingdom is measured not by how many serve you,
     {
       slug: 'the-foundation-of-prayer',
       title: 'The Foundation of Prayer',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-03-10',
       duration: 'Read Time: 18 min',
       series: 'Ministry Foundations',
@@ -1652,7 +1652,7 @@ The foundation of all effective ministry is prayer. Build your life and service 
     {
       slug: 'the-power-of-agreement',
       title: 'The Power of Agreement',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-04-07',
       duration: 'Read Time: 17 min',
       series: 'Prayer That Moves Heaven',
@@ -1975,7 +1975,7 @@ Let the power of agreement transform your prayer life, your ministry, and your c
     {
       slug: 'the-authority-of-scripture',
       title: 'The Authority of Scripture',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-05-05',
       duration: 'Read Time: 20 min',
       series: 'Core Values',
@@ -2263,7 +2263,7 @@ Trust God's Word. Obey God's Word. Live God's Word. Share God's Word. Your life 
     {
       slug: 'leading-like-jesus',
       title: 'Leading Like Jesus',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-06-02',
       duration: 'Read Time: 19 min',
       series: 'Leadership Excellence',
@@ -2607,7 +2607,7 @@ Let Christ's revolutionary leadership model shape your approach to influence. Le
     {
       slug: 'the-great-commission-mandate',
       title: 'The Great Commission Mandate',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-07-07',
       duration: 'Read Time: 18 min',
       series: 'Global Mission',

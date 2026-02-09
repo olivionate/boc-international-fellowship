@@ -26,7 +26,7 @@ import joinPrayerMinistry from '@/assets/join-prayer-ministry.jpg';
 const Ministries = () => {
   const mainMinistries = [
     {
-      title: 'BCIF Global Ministers Network',
+      title: 'BOC Global Ministers Network',
       subtitle: 'Empowering Gospel Ministers Worldwide',
       description: 'A global ministry committed to the holistic development of Gospel Ministers through comprehensive support, training, and fellowship. Our monthly gatherings across various countries create dynamic platforms for ministers to connect, learn, and grow.',
       icon: Users,
@@ -42,7 +42,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'BCIF School of Ministry',
+      title: 'BOC School of Ministry',
       subtitle: 'Premier Theological Education',
       description: 'A premier institution dedicated to theological education and leadership development, offering comprehensive curriculum tailored to equip pastors, evangelists, missionaries, and lay leaders for impactful service.',
       icon: GraduationCap,
@@ -58,7 +58,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'BCIF Global Outreach Ministry',
+      title: 'BOC Global Outreach Ministry',
       subtitle: 'Making Disciples of All Nations',
       description: 'Embodying our commitment to fulfilling the Great Commission through evangelistic campaigns, church planting, and community development projects that address both spiritual and material needs.',
       icon: Globe,
@@ -74,7 +74,7 @@ const Ministries = () => {
       ]
     },
     {
-      title: 'BCIF Music Academy',
+      title: 'BOC Music Academy',
       subtitle: 'Transformative Worship Training',
       description: 'Training worship leaders, musicians, and vocalists to lead Spirit-filled worship experiences that draw people into God\'s presence, blending technical excellence with spiritual sensitivity.',
       icon: Music,

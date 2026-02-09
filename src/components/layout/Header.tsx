@@ -106,16 +106,16 @@ const Header = () => {
                           <Link to="/ministries" className="w-full">All Ministries</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/global-ministers-assembly" className="w-full">BCIF Global Ministers Network</Link>
+                          <Link to="/ministries/global-ministers-assembly" className="w-full">BOC Global Ministers Network</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/school-of-ministry" className="w-full">BCIF School of Ministry</Link>
+                          <Link to="/ministries/school-of-ministry" className="w-full">BOC School of Ministry</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/global-outreach" className="w-full">BCIF Global Outreach Ministry</Link>
+                          <Link to="/ministries/global-outreach" className="w-full">BOC Global Outreach Ministry</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/ministries/music-academy" className="w-full">BCIF Music Academy</Link>
+                          <Link to="/ministries/music-academy" className="w-full">BOC Music Academy</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/ministries/boc-tv" className="w-full">The Body of Christ TV [BOC TV]</Link>
@@ -220,28 +220,28 @@ const Header = () => {
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              BCIF Global Ministers Network
+                              BOC Global Ministers Network
                             </Link>
                             <Link
                               to="/ministries/school-of-ministry"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              BCIF School of Ministry
+                              BOC School of Ministry
                             </Link>
                             <Link
                               to="/ministries/global-outreach"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              BCIF Global Outreach Ministry
+                              BOC Global Outreach Ministry
                             </Link>
                             <Link
                               to="/ministries/music-academy"
                               onClick={() => setIsOpen(false)}
                               className="block text-sm py-1.5 text-muted-foreground hover:text-primary transition-colors"
                             >
-                              BCIF Music Academy
+                              BOC Music Academy
                             </Link>
                             <Link
                               to="/ministries/boc-tv"

@@ -272,7 +272,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">First Time Visitors</h3>
                     <p className="text-muted-foreground text-sm">
-                      New to BCIF? We'd love to welcome you! Arrive 15 minutes early 
+                      New to BOC? We'd love to welcome you! Arrive 15 minutes early 
                       to get settled and meet our friendly welcome team.
                     </p>
                   </div>

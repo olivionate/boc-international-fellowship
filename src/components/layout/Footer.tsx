@@ -26,12 +26,12 @@ const Footer = () => {
               <div className="w-16 h-16 rounded-full overflow-hidden bg-white flex items-center justify-center">
                 <img 
                   src={bocLogo} 
-                  alt="BCIF Logo" 
+                  alt="BOC Logo" 
                   className="w-14 h-14 object-contain"
                 />
               </div>
               <div>
-                <h3 className="font-bold text-lg">BCIF</h3>
+                <h3 className="font-bold text-lg">BOC</h3>
                 <p className="text-sm opacity-90">Body of Christ International Fellowship</p>
               </div>
             </div>

@@ -20,7 +20,7 @@ const Sermons = () => {
     // Walking in Divine Purpose Series (20 sermons)
     {
       title: 'Discovering Your Divine Assignment',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-07',
       duration: 'Read Time: 15 min',
       series: 'Walking in Divine Purpose',
@@ -38,7 +38,7 @@ When we align our lives with God's purposes, we find true fulfillment and effect
     },
     {
       title: 'Walking by Faith, Not Sight',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-14',
       duration: 'Read Time: 18 min',
       series: 'Walking in Divine Purpose',
@@ -56,7 +56,7 @@ When we surrender our limited perspective and trust God's infinite wisdom, we po
     },
     {
       title: 'Overcoming Fear and Doubt',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-21',
       duration: 'Read Time: 16 min',
       series: 'Walking in Divine Purpose',
@@ -74,7 +74,7 @@ Victory over fear comes through understanding our identity in Christ and His fai
     },
     {
       title: 'The Power of Prophetic Vision',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-28',
       duration: 'Read Time: 20 min',
       series: 'Walking in Divine Purpose',
@@ -92,7 +92,7 @@ Learning to receive and interpret God's prophetic communication opens doors to g
     },
     {
       title: 'Seasons of Preparation',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-02-04',
       duration: 'Read Time: 17 min',
       series: 'Walking in Divine Purpose',
@@ -111,7 +111,7 @@ These seasons develop character, dependence on God, and spiritual maturity neces
     // Continue with more sermons for this series...
     {
       title: 'Divine Timing and Patience',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-02-11',
       duration: 'Read Time: 19 min',
       series: 'Walking in Divine Purpose',
@@ -131,7 +131,7 @@ Patience in God's timing produces spiritual strength and prepares us for the ful
     // Ministry Foundations Series (20 sermons)
     {
       title: 'Called to Serve',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-03-03',
       duration: 'Read Time: 16 min',
       series: 'Ministry Foundations',
@@ -149,7 +149,7 @@ Every believer is called to ministry, using their unique gifts to serve the body
     },
     {
       title: 'The Foundation of Prayer',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-03-10',
       duration: 'Read Time: 18 min',
       series: 'Ministry Foundations',
@@ -169,7 +169,7 @@ Jesus, our perfect example, prioritized prayer even in the midst of demanding mi
     // Prayer That Moves Heaven Series (6 sermons shown, 14 more would continue...)
     {
       title: 'The Power of Agreement',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-04-07',
       duration: 'Read Time: 17 min',
       series: 'Prayer That Moves Heaven',
@@ -189,7 +189,7 @@ The early church understood the power of unified prayer, and it became the found
     // Core Values Series
     {
       title: 'The Authority of Scripture',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-05-05',
       duration: 'Read Time: 20 min',
       series: 'Core Values',
@@ -209,7 +209,7 @@ God's Word remains eternally relevant and absolutely trustworthy in every genera
     // Leadership Excellence Series
     {
       title: 'Leading Like Jesus',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-06-02',
       duration: 'Read Time: 19 min',
       series: 'Leadership Excellence',
@@ -229,7 +229,7 @@ Christian leadership requires the mindset of Christ: humble service rather than 
     // Global Mission Series
     {
       title: 'The Great Commission Mandate',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-07-07',
       duration: 'Read Time: 18 min',
       series: 'Global Mission',

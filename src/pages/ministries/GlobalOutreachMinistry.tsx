@@ -14,7 +14,7 @@ const GlobalOutreachMinistry = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="BCIF Global Outreach Ministry"
+            alt="BOC Global Outreach Ministry"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-accent/80"></div>
@@ -23,7 +23,7 @@ const GlobalOutreachMinistry = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              BCIF Global Outreach Ministry
+              BOC Global Outreach Ministry
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Making Disciples of All Nations Through Evangelistic Campaigns and Community Development
@@ -58,7 +58,7 @@ const GlobalOutreachMinistry = () => {
               <div className="p-6">
                 <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The BCIF Global Outreach Ministry embodies BCIF's commitment to fulfilling the Great Commission 
+                  The BOC Global Outreach Ministry embodies BOC's commitment to fulfilling the Great Commission 
                   by making disciples of all nations. This ministry serves as the church's evangelistic and missional arm, 
                   spearheading initiatives that extend the Gospel's reach to diverse regions and people groups.
                 </p>
@@ -204,7 +204,7 @@ const GlobalOutreachMinistry = () => {
             <div>
               <h2 className="text-3xl font-bold text-divine mb-6">Holistic Ministry Approach</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                By addressing practical needs—such as providing medical care, food relief, or economic empowerment—BCIF 
+                By addressing practical needs—such as providing medical care, food relief, or economic empowerment—BOC 
                 demonstrates Christ's love in tangible ways, earning trust and opening hearts to the Gospel. Our community 
                 development initiatives create lasting change while sharing the transformative message of Jesus Christ.
               </p>
@@ -302,7 +302,7 @@ const GlobalOutreachMinistry = () => {
           <div className="card-divine bg-gradient-subtle p-12 text-center">
             <h2 className="text-4xl font-bold text-divine mb-6">Be Part of the Great Commission</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Through our outreach efforts, BCIF has planted churches, trained local leaders, and sparked spiritual 
+              Through our outreach efforts, BOC has planted churches, trained local leaders, and sparked spiritual 
               awakenings in numerous communities. Join us in contributing to our vision of global revival.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

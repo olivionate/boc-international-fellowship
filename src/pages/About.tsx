@@ -17,7 +17,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-gradient-hero py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="hero-title text-white mb-6">About BCIF</h1>
+          <h1 className="hero-title text-white mb-6">About BOC</h1>
           <p className="hero-subtitle text-white/90 max-w-3xl mx-auto">
             Discover our story, mission, and the divine calling that drives our global ministry
           </p>
@@ -33,16 +33,16 @@ const About = () => {
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground mb-6">
-                The Body of Christ International Fellowship (BCIF), headquartered in the bustling capital city of Nairobi, Kenya, 
+                The Body of Christ International Fellowship (BOC), headquartered in the bustling capital city of Nairobi, Kenya, 
                 stands as a vibrant, Christ-centered Christian church with a profound calling to impact the world. Rooted in the 
-                heart of East Africa, BCIF is not merely a local congregation but a global movement with a divine mandate to edify, 
+                heart of East Africa, BOC is not merely a local congregation but a global movement with a divine mandate to edify, 
                 equip, build, and mentor church ministers to fulfill their sacred calling within the Body of Christ.
               </p>
               
               <p className="text-muted-foreground mb-6">
-                Founded on the unshakable pillars of biblical truth, spiritual empowerment, and global outreach, BCIF serves as 
+                Founded on the unshakable pillars of biblical truth, spiritual empowerment, and global outreach, BOC serves as 
                 a lighthouse of faith, guiding believers toward spiritual maturity and igniting transformation across nations. 
-                Through its dynamic ministries and unwavering commitment to holistic ministry, BCIF is a catalyst for global revival, 
+                Through its dynamic ministries and unwavering commitment to holistic ministry, BOC is a catalyst for global revival, 
                 fostering a renewed passion for Christ and His Kingdom.
               </p>
             </div>
