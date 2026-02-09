@@ -15,7 +15,7 @@ const WelcomeSection = () => {
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Founded on the unshakable pillars of biblical truth, spiritual empowerment, and global outreach, 
-              BCIF serves as a lighthouse of faith, guiding believers toward spiritual maturity and igniting 
+              BOC serves as a lighthouse of faith, guiding believers toward spiritual maturity and igniting 
               transformation across nations.
             </p>
           </div>
@@ -27,7 +27,7 @@ const WelcomeSection = () => {
                   Our Divine Mission
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  At its core, BCIF is driven by a mission to glorify God by equipping faithful servants 
+                  At its core, BOC is driven by a mission to glorify God by equipping faithful servants 
                   of Jesus Christ to edify the Body of Christ, make disciples of all nations, and spark 
                   spiritual revival worldwide.
                 </p>
@@ -78,12 +78,12 @@ const WelcomeSection = () => {
                 </div>
                 <div className="p-8">
                   <blockquote className="text-xl font-medium text-foreground mb-6 italic">
-                    "BCIF envisions a world where ministers are spiritually mature, theologically grounded, 
+                    "BOC envisions a world where ministers are spiritually mature, theologically grounded, 
                     and practically equipped to lead vibrant, impactful ministries that transform communities and nations."
                   </blockquote>
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold">BCIF</span>
+                      <span className="text-primary-foreground font-bold">BOC</span>
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">Our Vision</p>

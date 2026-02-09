@@ -25,7 +25,7 @@ const SeriesList = () => {
     {
       slug: 'discovering-your-divine-assignment',
       title: 'Discovering Your Divine Assignment',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-07',
       duration: 'Read Time: 15 min',
       series: 'Walking in Divine Purpose',
@@ -36,7 +36,7 @@ const SeriesList = () => {
     {
       slug: 'walking-by-faith-not-sight',
       title: 'Walking by Faith, Not Sight',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-14',
       duration: 'Read Time: 18 min',
       series: 'Walking in Divine Purpose',
@@ -47,7 +47,7 @@ const SeriesList = () => {
     {
       slug: 'overcoming-fear-and-doubt',
       title: 'Overcoming Fear and Doubt',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-21',
       duration: 'Read Time: 16 min',
       series: 'Walking in Divine Purpose',
@@ -58,7 +58,7 @@ const SeriesList = () => {
     {
       slug: 'the-power-of-prophetic-vision',
       title: 'The Power of Prophetic Vision',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-01-28',
       duration: 'Read Time: 20 min',
       series: 'Walking in Divine Purpose',
@@ -69,7 +69,7 @@ const SeriesList = () => {
     {
       slug: 'seasons-of-preparation',
       title: 'Seasons of Preparation',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-02-04',
       duration: 'Read Time: 17 min',
       series: 'Walking in Divine Purpose',
@@ -80,7 +80,7 @@ const SeriesList = () => {
     {
       slug: 'divine-timing-and-patience',
       title: 'Divine Timing and Patience',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-02-11',
       duration: 'Read Time: 19 min',
       series: 'Walking in Divine Purpose',
@@ -93,7 +93,7 @@ const SeriesList = () => {
     {
       slug: 'called-to-serve',
       title: 'Called to Serve',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-03-03',
       duration: 'Read Time: 16 min',
       series: 'Ministry Foundations',
@@ -104,7 +104,7 @@ const SeriesList = () => {
     {
       slug: 'the-foundation-of-prayer',
       title: 'The Foundation of Prayer',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-03-10',
       duration: 'Read Time: 18 min',
       series: 'Ministry Foundations',
@@ -117,7 +117,7 @@ const SeriesList = () => {
     {
       slug: 'the-power-of-agreement',
       title: 'The Power of Agreement',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-04-07',
       duration: 'Read Time: 17 min',
       series: 'Prayer That Moves Heaven',
@@ -130,7 +130,7 @@ const SeriesList = () => {
     {
       slug: 'the-authority-of-scripture',
       title: 'The Authority of Scripture',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-05-05',
       duration: 'Read Time: 20 min',
       series: 'Core Values',
@@ -143,7 +143,7 @@ const SeriesList = () => {
     {
       slug: 'leading-like-jesus',
       title: 'Leading Like Jesus',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-06-02',
       duration: 'Read Time: 19 min',
       series: 'Leadership Excellence',
@@ -156,7 +156,7 @@ const SeriesList = () => {
     {
       slug: 'the-great-commission-mandate',
       title: 'The Great Commission Mandate',
-      speaker: 'Pastor Oliver Dennis, Senior Pastor - BCIF',
+      speaker: 'Pastor Oliver Dennis, Senior Pastor - BOC',
       date: '2024-07-07',
       duration: 'Read Time: 18 min',
       series: 'Global Mission',

@@ -24,7 +24,7 @@ const Give = () => {
   const givingOptions = [
     {
       title: 'Tithe & Offerings',
-      description: 'Support the ongoing ministry and operations of BCIF through faithful tithing and generous offerings.',
+      description: 'Support the ongoing ministry and operations of BOC through faithful tithing and generous offerings.',
       icon: Heart,
       impact: 'Funds pastoral care, worship services, and daily church operations'
     },
@@ -35,7 +35,7 @@ const Give = () => {
       impact: 'Supports missionaries, crusades, and international outreach programs'
     },
     {
-      title: 'BCIF School of Ministry',
+      title: 'BOC School of Ministry',
       description: 'Invest in training the next generation of church leaders through theological education and development.',
       icon: Users,
       impact: 'Provides scholarships, resources, and faculty support for students'
@@ -53,7 +53,7 @@ const Give = () => {
       {/* Hero Section */}
       <section className="bg-gradient-hero py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="hero-title text-white mb-6">Give to BCIF</h1>
+          <h1 className="hero-title text-white mb-6">Give to BOC</h1>
           <p className="hero-subtitle text-white/90 max-w-3xl mx-auto">
             Partner with us in advancing God's Kingdom through your generous giving. 
             Every gift makes a difference in lives and communities around the world.
@@ -107,7 +107,7 @@ const Give = () => {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-divine mb-6">Give Online</h2>
               <p className="text-xl text-muted-foreground">
-                Secure, convenient, and easy way to support BCIF ministries
+                Secure, convenient, and easy way to support BOC ministries
               </p>
             </div>
 
@@ -167,7 +167,7 @@ const Give = () => {
                     </label>
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="radio" name="givingType" value="school" className="text-primary" />
-                      <span>BCIF School of Ministry</span>
+                      <span>BOC School of Ministry</span>
                     </label>
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="radio" name="givingType" value="outreach" className="text-primary" />

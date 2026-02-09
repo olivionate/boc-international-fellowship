@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* BCIF Church Design System - Inspired by JCC Kenya */
+/* BOC Church Design System - Inspired by JCC Kenya */
 
 @layer base {
   :root {
@@ -20,7 +20,7 @@
     --primary-foreground: 0 0% 100%;
     --primary-glow: 270 70% 50%;
 
-    /* Gold accent colors for BCIF branding */
+    /* Gold accent colors for BOC branding */
     --secondary: 45 100% 60%;
     --secondary-foreground: 245 15% 13%;
 

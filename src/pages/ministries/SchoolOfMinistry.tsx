@@ -14,7 +14,7 @@ const SchoolOfMinistry = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="BCIF School of Ministry"
+            alt="BOC School of Ministry"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-accent/80"></div>
@@ -23,7 +23,7 @@ const SchoolOfMinistry = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              BCIF School of Ministry
+              BOC School of Ministry
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Premier Theological Education for Transformational Leadership Development
@@ -58,7 +58,7 @@ const SchoolOfMinistry = () => {
               <div className="p-6">
                 <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The BCIF School of Ministry is a premier institution dedicated to theological education and leadership 
+                  The BOC School of Ministry is a premier institution dedicated to theological education and leadership 
                   development. Recognizing that effective ministry requires a deep understanding of Scripture and practical skills, 
                   the school offers a comprehensive curriculum tailored to equip pastors, evangelists, missionaries, and lay leaders 
                   for impactful service.

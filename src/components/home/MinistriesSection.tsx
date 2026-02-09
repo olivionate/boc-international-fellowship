@@ -22,7 +22,7 @@ import tvImg from '@/assets/ministry-tv.jpg';
 const MinistriesSection = () => {
   const ministries = [
     {
-      title: 'BCIF Global Ministers Network',
+      title: 'BOC Global Ministers Network',
       description: 'Empowering Gospel Ministers worldwide through comprehensive support, training, and fellowship that nurtures spiritual, emotional, and practical capacities.',
       icon: Users,
       color: 'bg-primary',
@@ -30,7 +30,7 @@ const MinistriesSection = () => {
       link: '/ministries/global-ministers-assembly'
     },
     {
-      title: 'BCIF School of Ministry',
+      title: 'BOC School of Ministry',
       description: 'Premier theological education and leadership development institution offering comprehensive curriculum for pastors, evangelists, and ministry leaders.',
       icon: GraduationCap,
       color: 'bg-accent',
@@ -38,7 +38,7 @@ const MinistriesSection = () => {
       link: '/ministries/school-of-ministry'
     },
     {
-      title: 'BCIF Global Outreach Ministry',
+      title: 'BOC Global Outreach Ministry',
       description: 'Fulfilling the Great Commission through evangelistic campaigns, church planting, and community development projects across nations.',
       icon: Globe,
       color: 'bg-secondary',
@@ -46,7 +46,7 @@ const MinistriesSection = () => {
       link: '/ministries/global-outreach'
     },
     {
-      title: 'BCIF Music Academy',
+      title: 'BOC Music Academy',
       description: 'Training worship leaders, musicians, and vocalists to lead transformative, Spirit-filled worship experiences that draw people into God\'s presence.',
       icon: Music,
       color: 'bg-primary',

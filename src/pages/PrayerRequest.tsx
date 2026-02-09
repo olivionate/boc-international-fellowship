@@ -236,7 +236,7 @@ const PrayerRequest = () => {
                       <div className="flex items-start space-x-3">
                         <Checkbox id="visitor" />
                         <label htmlFor="visitor" className="text-sm text-foreground leading-relaxed">
-                          I am interested in visiting BCIF
+                          I am interested in visiting BOC
                         </label>
                       </div>
                     </div>

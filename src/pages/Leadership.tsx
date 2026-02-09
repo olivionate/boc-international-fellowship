@@ -26,7 +26,7 @@ const Leadership = () => {
       phone: "+254 700 000 002"
     },
     {
-      name: "BCIF Pastoral Council",
+      name: "BOC Pastoral Council",
       title: "Administration & Development",
       description: "In charge of administration and development of the church",
       image: leadershipImage,

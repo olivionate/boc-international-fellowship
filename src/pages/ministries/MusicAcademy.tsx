@@ -14,7 +14,7 @@ const MusicAcademy = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="BCIF Music Academy"
+            alt="BOC Music Academy"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-accent/80"></div>
@@ -23,7 +23,7 @@ const MusicAcademy = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="hero-title text-white mb-6">
-              BCIF Music Academy
+              BOC Music Academy
             </h1>
             <p className="hero-subtitle text-white/90 mb-8">
               Transformative Worship Training for Spirit-Filled Musical Excellence
@@ -58,7 +58,7 @@ const MusicAcademy = () => {
               <div className="p-6">
                 <h2 className="text-3xl font-bold text-divine mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Worship is at the heart of BCIF's identity, and the BCIF Music Academy is a vibrant expression 
+                  Worship is at the heart of BOC's identity, and the BOC Music Academy is a vibrant expression 
                   of this commitment. The academy exists to train worship leaders, musicians, and vocalists to lead 
                   transformative, Spirit-filled worship experiences that draw people into God's presence.
                 </p>
@@ -302,7 +302,7 @@ const MusicAcademy = () => {
             <h2 className="text-4xl font-bold text-divine mb-6">Transform Lives Through Worship</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               By training worship leaders who lead with authenticity and passion, the academy plays a pivotal role 
-              in BCIF's vision to transform lives through Spirit-led worship. Join us in creating music that draws 
+              in BOC's vision to transform lives through Spirit-led worship. Join us in creating music that draws 
               people into God's presence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
